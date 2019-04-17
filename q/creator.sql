@@ -8,7 +8,7 @@ primColor varchar(9),
 secondColor varchar(9),
 doors int not null,
 --Performance
-acceleration decimal(2,1),
+acceleration decimal(3,1),
 topSpeed int,
 mpgHi decimal(3,1),
 mpgCity decimal(3,1),
@@ -54,10 +54,10 @@ PRIMARY KEY (workId)
 create table customers
 (
 representative int, --employee's work id
-phoneNum varchar(20) not null,
-email varchar(30),
+phoneNum varchar(25) not null,
+email varchar(35),
 street varchar(30),
-sState varchar(13),
+sState varchar(15),
 --name
 fname varchar(15) not null,
 mname varchar(15),

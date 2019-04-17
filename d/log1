@@ -1,0 +1,3080 @@
+Script started on 2019-04-17 18:07:39+0000
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ sqllde[Kr userid=zdy262/01591350 control=loader.ctl
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:08:06 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+SQL*Loader-500: Unable to open file (loader.ctl)
+SQL*Loader-553: file not found
+SQL*Loader-509: System error: No such file or directory
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ sqlldr userid=zdy262/01591350 control=loader.ctl1.ctl [A]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:08:12 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Conventional
+Commit point reached - logical record count 20
+
+Table CARS:
+  0 Rows successfully loaded.
+
+Check the log file:
+  loader1.log
+for more information about the load.
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ cat loader1.log
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:08:12 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loader1.ctl
+Data File:      cars.csv
+  Bad File:     cars.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table CARS, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+VIN                                 FIRST     *   ,       CHARACTER            
+SYEAR                                NEXT     *   ,       CHARACTER            
+MAKE                                 NEXT     *   ,       CHARACTER            
+MODEL                                NEXT     *   ,       CHARACTER            
+PRIMCOLOR                            NEXT     *   ,       CHARACTER            
+SECONDCOLOR                          NEXT     *   ,       CHARACTER            
+DOORS                                NEXT     *   ,       CHARACTER            
+ACCELERATION                         NEXT     *   ,       CHARACTER            
+TOPSPEED                             NEXT     *   ,       CHARACTER            
+MPGHI                                NEXT     *   ,       CHARACTER            
+MPGCITY                              NEXT     *   ,       CHARACTER            
+TRANSMISSION                         NEXT     *   ,       CHARACTER            
+NUMGEARS                             NEXT     *   ,       CHARACTER            
+POWEROUTPUT                          NEXT     *   ,       CHARACTER            
+TORQUE                               NEXT     *   ,       CHARACTER            
+CYLINDERS                            NEXT     *   ,       CHARACTER            
+WEIGHT                               NEXT     *   ,       CHARACTER            
+SLENGTH                              NEXT     *   ,       CHARACTER            
+STORENUM                             NEXT     *   ,       CHARACTER            
+
+value used for ROWS parameter changed from 64 to 52
+Record 1: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+Record 2: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01722: invalid number
+
+Record 3: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01722: invalid number
+
+Record 4: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+Record 5: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 6: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 7: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 8: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 9: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+Record 10: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 11: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 12: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 13: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 14: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 15: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 16: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+Record 17: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 18: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+Record 19: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+Record 20: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+
+Table CARS:
+  0 Rows successfully loaded.
+  20 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 254904 bytes(52 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            20
+Total logical records rejected:        20
+Total logical records discarded:        0
+
+Run began on Wed Apr 17 18:08:12 2019
+Run ended on Wed Apr 17 18:08:12 2019
+
+Elapsed time was:     00:00:00.14
+CPU time was:         00:00:00.03
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ cat loader1.logsqlldr userid=zdy262/01591350 control=loader1.ctl [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P.ctl
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2.ctl [A]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:09:44 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Conventional
+Commit point reached - logical record count 25
+
+Table EMPLOYEES:
+  0 Rows successfully loaded.
+
+Check the log file:
+  loader2.log
+for more information about the load.
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ sqlldr userid=zdy262/01591350 control=loader2.ctl [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P.ctl
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C3.ctl [A]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:09:51 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Conventional
+Commit point reached - logical record count 1
+
+Table STORE:
+  1 Row successfully loaded.
+
+Check the log file:
+  loader3.log
+for more information about the load.
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ sqlldr userid=zdy262/01591350 control=loader3.ctl [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2.ctl [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P.ctl
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C4.ctl [A]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:10:07 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Conventional
+Commit point reached - logical record count 64
+Commit point reached - logical record count 100
+
+Table CUSTOMERS:
+  87 Rows successfully loaded.
+
+Check the log file:
+  loader4.log
+for more information about the load.
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ sqlldr userid=zdy262/01591350 control=loader4.ctl [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P.ctl
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C5.ctl [A]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:10:26 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Conventional
+Commit point reached - logical record count 4
+Commit point reached - logical record count 5
+
+Table SCHEDULE:
+  0 Rows successfully loaded.
+
+Check the log file:
+  loader5.log
+for more information about the load.
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ sqlldr userid=zdy262/01591350 control=loader5.ctl [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P.ctl
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C6.ctl [A]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:10:34 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Conventional
+Commit point reached - logical record count 25
+
+Table MANAGES:
+  0 Rows successfully loaded.
+
+Check the log file:
+  loader6.log
+for more information about the load.
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ vi loader6.ctl
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"loader6.ctl" [noeol][dos] 5L, 99C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[33mload[m data
+infile manages[33m.[mcsv
+into table manages
+fields terminated by[34m ','[m
+[33m([memployeeId[33m,[mmanagerId[33m)[m
+[1m[34m~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[24;53H:[1;1H[24;1H[K[24;1H:[?2004h[?25hq[?25l[?25h[?25l[?2004l[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0t]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ cat manages.csv
+﻿"25","3"
+"1","3"
+"2","3"
+"3","10"
+"4","3"
+"5","3"
+"6","3"
+"7","16"
+"8","16"
+"9","3"
+"10","10"
+"11","3"
+"12","16"
+"13","16"
+"14","16"
+"15","3"
+"16","10"
+"17","3"
+"18","16"
+"19","16"
+"20","3"
+"21","3"
+"22","3"
+"23","3"
+"24","3"
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ cat manages.csv[Ksed -i ''s'/'"'/'/'g'[C manags[Kes.csv
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ sed -i 's/"//g' manages.csv[12Pcat[C[C[C[C[C[C[C[C[C[C[C[C
+﻿25,3
+1,3
+2,3
+3,10
+4,3
+5,3
+6,3
+7,16
+8,16
+9,3
+10,10
+11,3
+12,16
+13,16
+14,16
+15,3
+16,10
+17,3
+18,16
+19,16
+20,3
+21,3
+22,3
+23,3
+24,3
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ cat manages.csv[12@sed -i 's/"//g'[C[C[C[C[C[C[C[C[C[C[C[C[12Pcat[C[C[C[C[C[C[C[C[C[C[C[C[1Pvi loader6.ctlsqlldr userid=zdy262/01591350 control=loader6.ctl [A
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:12:20 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Conventional
+Commit point reached - logical record count 25
+
+Table MANAGES:
+  0 Rows successfully loaded.
+
+Check the log file:
+  loader6.log
+for more information about the load.
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ ls
+cars.bad       employees.csv  loader3.ctl  loader5.log  manages.bad
+cars.csv       loader1.ctl    loader3.log  loader6.ctl  manages.csv
+customers.bad  loader1.log    loader4.ctl  loader6.log  schedule.bad
+customers.csv  loader2.ctl    loader4.log  loader.log   schedule.csv
+employees.bad  loader2.log    loader5.ctl  log1         store.csv
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ vi[K[Kcat loader4.log
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:10:07 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loader4.ctl
+Data File:      customers.csv
+  Bad File:     customers.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table CUSTOMERS, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+REPRESENTATIVE                      FIRST     *   ,       CHARACTER            
+PHONENUM                             NEXT     *   ,       CHARACTER            
+MNAME                                NEXT     *   ,       CHARACTER            
+LNAME                                NEXT     *   ,       CHARACTER            
+SSTATE                               NEXT     *   ,       CHARACTER            
+STREET                               NEXT     *   ,       CHARACTER            
+FNAME                                NEXT     *   ,       CHARACTER            
+EMAIL                                NEXT     *   ,       CHARACTER            
+
+Record 1: Rejected - Error on table CUSTOMERS, column PHONENUM.
+ORA-12899: value too large for column "ZDY262"."CUSTOMERS"."PHONENUM" (actual: 21, maximum: 20)
+
+Record 6: Rejected - Error on table CUSTOMERS, column PHONENUM.
+ORA-12899: value too large for column "ZDY262"."CUSTOMERS"."PHONENUM" (actual: 21, maximum: 20)
+
+Record 7: Rejected - Error on table CUSTOMERS, column PHONENUM.
+ORA-12899: value too large for column "ZDY262"."CUSTOMERS"."PHONENUM" (actual: 21, maximum: 20)
+
+Record 15: Rejected - Error on table CUSTOMERS, column SSTATE.
+ORA-12899: value too large for column "ZDY262"."CUSTOMERS"."SSTATE" (actual: 14, maximum: 13)
+
+Record 30: Rejected - Error on table CUSTOMERS, column SSTATE.
+ORA-12899: value too large for column "ZDY262"."CUSTOMERS"."SSTATE" (actual: 14, maximum: 13)
+
+Record 31: Rejected - Error on table CUSTOMERS, column SSTATE.
+ORA-12899: value too large for column "ZDY262"."CUSTOMERS"."SSTATE" (actual: 14, maximum: 13)
+
+Record 34: Rejected - Error on table CUSTOMERS, column PHONENUM.
+ORA-12899: value too large for column "ZDY262"."CUSTOMERS"."PHONENUM" (actual: 21, maximum: 20)
+
+Record 40: Rejected - Error on table CUSTOMERS, column PHONENUM.
+ORA-12899: value too large for column "ZDY262"."CUSTOMERS"."PHONENUM" (actual: 21, maximum: 20)
+
+Record 48: Rejected - Error on table CUSTOMERS, column PHONENUM.
+ORA-12899: value too large for column "ZDY262"."CUSTOMERS"."PHONENUM" (actual: 21, maximum: 20)
+
+Record 60: Rejected - Error on table CUSTOMERS, column SSTATE.
+ORA-12899: value too large for column "ZDY262"."CUSTOMERS"."SSTATE" (actual: 14, maximum: 13)
+
+Record 90: Rejected - Error on table CUSTOMERS, column PHONENUM.
+ORA-12899: value too large for column "ZDY262"."CUSTOMERS"."PHONENUM" (actual: 21, maximum: 20)
+
+Record 93: Rejected - Error on table CUSTOMERS, column SSTATE.
+ORA-12899: value too large for column "ZDY262"."CUSTOMERS"."SSTATE" (actual: 14, maximum: 13)
+
+Record 99: Rejected - Error on table CUSTOMERS, column PHONENUM.
+ORA-12899: value too large for column "ZDY262"."CUSTOMERS"."PHONENUM" (actual: 21, maximum: 20)
+
+
+Table CUSTOMERS:
+  87 Rows successfully loaded.
+  13 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 132096 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:           100
+Total logical records rejected:        13
+Total logical records discarded:        0
+
+Run began on Wed Apr 17 18:10:07 2019
+Run ended on Wed Apr 17 18:10:08 2019
+
+Elapsed time was:     00:00:00.19
+CPU time was:         00:00:00.04
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ cat loader4.log[1P.log1.log
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:08:12 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loader1.ctl
+Data File:      cars.csv
+  Bad File:     cars.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table CARS, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+VIN                                 FIRST     *   ,       CHARACTER            
+SYEAR                                NEXT     *   ,       CHARACTER            
+MAKE                                 NEXT     *   ,       CHARACTER            
+MODEL                                NEXT     *   ,       CHARACTER            
+PRIMCOLOR                            NEXT     *   ,       CHARACTER            
+SECONDCOLOR                          NEXT     *   ,       CHARACTER            
+DOORS                                NEXT     *   ,       CHARACTER            
+ACCELERATION                         NEXT     *   ,       CHARACTER            
+TOPSPEED                             NEXT     *   ,       CHARACTER            
+MPGHI                                NEXT     *   ,       CHARACTER            
+MPGCITY                              NEXT     *   ,       CHARACTER            
+TRANSMISSION                         NEXT     *   ,       CHARACTER            
+NUMGEARS                             NEXT     *   ,       CHARACTER            
+POWEROUTPUT                          NEXT     *   ,       CHARACTER            
+TORQUE                               NEXT     *   ,       CHARACTER            
+CYLINDERS                            NEXT     *   ,       CHARACTER            
+WEIGHT                               NEXT     *   ,       CHARACTER            
+SLENGTH                              NEXT     *   ,       CHARACTER            
+STORENUM                             NEXT     *   ,       CHARACTER            
+
+value used for ROWS parameter changed from 64 to 52
+Record 1: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+Record 2: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01722: invalid number
+
+Record 3: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01722: invalid number
+
+Record 4: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+Record 5: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 6: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 7: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 8: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 9: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+Record 10: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 11: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 12: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 13: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 14: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 15: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 16: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+Record 17: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 18: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+Record 19: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+Record 20: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+
+Table CARS:
+  0 Rows successfully loaded.
+  20 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 254904 bytes(52 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            20
+Total logical records rejected:        20
+Total logical records discarded:        0
+
+Run began on Wed Apr 17 18:08:12 2019
+Run ended on Wed Apr 17 18:08:12 2019
+
+Elapsed time was:     00:00:00.14
+CPU time was:         00:00:00.03
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ vi cars.csv
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"cars.csv" [dos] 20L, 1451C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H0,1994,toyota,supra,orange,green,2,51.1,159,21.6,21.6,m,6,280,333,l6,3329,178,100[2;1H0
+1,2014, toyota,camry,silver,black,4, , ,25,35,a,6,180,170,l4,3241,191,100
+2,2015,toyota,camry,beige,black,4, , ,25,35,a,6,180,170,l4,3241,191,100
+3,2019,alfa romeo,mito,red,,2,11.4,114,61.9,47,m,6,105,107,l2,2491,160,100
+4,2019,porsche,911,silver,,2,3.2,194,26.1,17.8,a,7,520,347,h6,3318,179,100
+5,2017,audi,r8,green,black,2,3.3,204,18.8,18.8,a,7,610,413,v10,3737,174,100
+6,2018,bmw,g20,white,,4,8.5,,57.4,41.3,a,8,150,236,l4,,185,100
+7,2008,chevrolet,express,white,,2,,,18,14,a,4,195,260,v6,4845,224,100
+8,2013,chevrolet,sonic,red,,4,11,,40,29,m,6,140,148,4,2743,159,100
+9,1992,chevrolet,camaro,black,,2,,,35.1,23.1,a,3,91,132,l4,2877,179,100
+10,1982,delorean,dmc-12,silver,,2,9.6,130,21,21,m,5,132,153,v6,2844,168,100
+11,2012,dodge,viper,red,,2,3.5,202,21,12,m,6,649,600,v10,3354,176,100
+12,2009,dodge,ram,blue,,4,,,20,14,a,4,215,235,v6,6025,229,100
+13,2012,dodge,dart,red,,4,,,37,27,a,6,162,184,4,3242,184,100
+14,2014,lexus,nx,grey,,4,7,124,28,21,a,6,238,258,l4,4050,182,100
+15,2016,toyota,Prius,white,,4,10.6,112,71.3,71.3,a,,98,105,l4,3197,179,100
+16,1989,chevrolet,camaro,white,,2,,,35.1,23.1,a,3,91,132,l4,2877,179,100
+17,2004,toyota,corolla,beige,,4,14.5,112,49,49,a,5,90,140,l4,2590,174,100
+18,2008,toyota,corolla,black,,4,14.5,112,49,49,a,5,90,140,l4,2590,174,100
+19,2005,toyota,corolla,silver,,4,14.5,112,49,49,a,5,90,140,l4,2590,174,100
+[1m[34m~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[24;53H~@k[1;1H[24;53H   [3;1H[24;63H2[3;1H[?25h[?25l[24;53H~@k[3;1H[24;53H   [4;1H[24;63H3[4;1H[?25h[?25l[24;53H~@k[4;1H[24;53H   [5;1H[24;63H4[5;1H[?25h[?25l[24;53H~@k[5;1H[24;53H   [5;2H[24;65H2[5;2H[?25h[?25l[24;65H3[5;3H[?25h[?25l[24;53H~@k[5;3H[24;53H   [5;4H[24;65H4[5;4H[?25h[?25l[24;53H~@k[5;4H[24;53H   [5;5H[24;65H5[5;5H[?25h[?25l[24;53H~@k[5;5H[24;53H   [5;6H[24;65H6[5;6H[?25h[?25l[24;53H~@k[5;6H[24;53H   [5;7H[24;65H7[5;7H[?25h[?25l[24;53H~@k[5;7H[24;53H   [5;8H[24;65H8[5;8H[?25h[?25l[24;53H~@k[5;8H[24;53H   [5;9H[24;65H9[5;9H[?25h[?25l[24;53H~@k[5;9H[24;53H   [5;10H[24;65H10[5;10H[?25h[?25l[24;53H~@k[5;10H[24;53H   [5;11H[24;66H1[5;11H[?25h[?25l[24;53H~@k[5;11H[24;53H   [5;12H[24;66H2[5;12H[?25h[?25l[24;53H~@k[5;12H[24;53H   [5;13H[24;66H3[5;13H[?25h[?25l[24;53H~@k[5;13H[24;53H   [5;14H[24;66H4[5;14H[?25h[?25l[24;53H~@k[5;14H[24;53H   [5;15H[24;66H5[5;15H[?25h[?25l[24;53H~@k[5;15H[24;53H   [5;16H[24;66H6[5;16H[?25h[?25l[24;53H~@k[5;16H[24;53H   [5;17H[24;66H7[5;17H[?25h[?25l[24;53H~@k[5;17H[24;53H   [5;18H[24;66H8[5;18H[?25h[?25l[24;53H~@k[5;18H[24;53H   [5;19H[24;66H9[5;19H[?25h[?25l[24;53H~@k[5;19H[24;53H   [5;20H[24;65H20[5;20H[?25h[?25l[24;53H~@k[5;20H[24;53H   [5;21H[24;66H1[5;21H[?25h[?25l[24;53H~@k[5;21H[24;53H   [5;22H[24;66H2[5;22H[?25h[?25l[24;53H~@k[5;22H[24;53H   [5;23H[24;66H3[5;23H[?25h[?25l[24;53H~@k[5;23H[24;53H   [5;24H[24;66H4[5;24H[?25h[?25l[24;53H~@k[5;24H[24;53H   [5;25H[24;66H5[5;25H[?25h[?25l[24;53H~@k[5;25H[24;53H   [5;26H[24;66H6[5;26H[?25h[?25l[24;53H~@k[5;26H[24;53H   [5;27H[24;66H7[5;27H[?25h[?25l[24;53H~@k[5;27H[24;53H   [5;28H[24;66H8[5;28H[?25h[?25l[24;53H~@k[5;28H[24;53H   [5;29H[24;66H9[5;29H[?25h[?25l[24;53H~@k[5;29H[24;53H   [5;30H[24;65H30[5;30H[?25h[?25l[24;53H~@k[5;30H[24;53H   [5;31H[24;66H1[5;31H[?25h[?25l[24;53H~@k[5;31H[24;53H   [5;32H[24;66H2[5;32H[?25h[?25l[24;53H~@k[5;32H[24;53H   [5;33H[24;66H3[5;33H[?25h[?25l[24;53H~@k[5;33H[24;53H   [5;34H[24;66H4[5;34H[?25h[?25l[24;53H~@k[5;34H[24;53H   [5;35H[24;66H5[5;35H[?25h[?25l[24;53H~@k[5;35H[24;53H   [5;36H[24;66H6[5;36H[?25h[?25l[24;53H~@k[5;36H[24;53H   [5;37H[24;66H7[5;37H[?25h[?25l[24;53H~@k[5;37H[24;53H   [5;38H[24;66H8[5;38H[?25h[?25l[24;53H~@k[5;38H[24;53H   [5;39H[24;66H9[5;39H[?25h[?25l[24;53H~@k[5;39H[24;53H   [5;40H[24;65H40[5;40H[?25h[?25l[24;53H~@k[5;40H[24;53H   [5;41H[24;66H1[5;41H[?25h[?25l[24;53H~@k[5;41H[24;53H   [5;42H[24;66H2[5;42H[?25h[?25l[24;53H~@k[5;42H[24;53H   [5;43H[24;66H3[5;43H[?25h[?25l[24;53H~@k[5;43H[24;53H   [5;44H[24;66H4[5;44H[?25h[?25l[24;53H~@k[5;44H[24;53H   [5;45H[24;66H5[5;45H[?25h[?25l[24;53H~@k[5;45H[24;53H   [5;46H[24;66H6[5;46H[?25h[?25l[24;53H~@k[5;46H[24;53H   [5;47H[24;66H7[5;47H[?25h[?25l[24;53H~@k[5;47H[24;53H   [5;48H[24;66H8[5;48H[?25h[?25l[24;53H~@k[5;48H[24;53H   [5;49H[24;66H9[5;49H[?25h[?25l[24;53H~@k[5;49H[24;53H   [5;50H[24;65H50[5;50H[?25h[?25l[24;53H~@k[5;50H[24;53H   [5;51H[24;66H1[5;51H[?25h[?25l[24;53H~@k[5;51H[24;53H   [5;52H[24;66H2[5;52H[?25h[?25l[24;53H~@k[5;52H[24;53H   [5;53H[24;66H3[5;53H[?25h[?25l[24;53H~@k[5;53H[24;53H   [5;54H[24;66H4[5;54H[?25h[?25l[24;53H~@k[5;54H[24;53H   [5;55H[24;66H5[5;55H[?25h[?25l[24;53H~@k[5;55H[24;53H   [5;56H[24;66H6[5;56H[?25h[?25l[24;53H~@k[5;56H[24;53H   [5;57H[24;66H7[5;57H[?25h[?25l[24;53H~@k[5;57H[24;53H   [5;58H[24;66H8[5;58H[?25h[?25l[24;53H~@k[5;58H[24;53H   [5;59H[24;66H9[5;59H[?25h[?25l[24;53H~@k[5;59H[24;53H   [5;60H[24;65H60[5;60H[?25h[?25l[24;53H~@k[5;60H[24;53H   [5;61H[24;66H1[5;61H[?25h[?25l[24;53H~@k[5;61H[24;53H   [5;62H[24;66H2[5;62H[?25h[?25l[24;53H~@k[5;62H[24;53H   [5;63H[24;66H3[5;63H[?25h[?25l[24;53H~@k[5;63H[24;53H   [5;64H[24;66H4[5;64H[?25h[?25l[24;53H~@k[5;64H[24;53H   [5;65H[24;66H5[5;65H[?25h[?25l[24;53H~@k[5;65H[24;53H   [5;66H[24;66H6[5;66H[?25h[?25l[24;53H~@k[5;66H[24;53H   [5;67H[24;66H7[5;67H[?25h[?25l[24;53H~@k[5;67H[24;53H   [5;68H[24;66H8[5;68H[?25h[?25l[24;53H~@k[5;68H[24;53H   [5;69H[24;66H9[5;69H[?25h[?25l[24;53H~@k[5;69H[24;53H   [5;70H[24;65H70[5;70H[?25h[?25l[24;53H~@k[5;70H[24;53H   [5;71H[24;66H1[5;71H[?25h[?25l[24;53H~@k[5;71H[24;53H   [5;72H[24;66H2[5;72H[?25h[?25l[24;53H~@k[5;72H[24;53H   [5;71H[24;66H1[5;71H[?25h[?25l[24;53H~@k[5;71H[24;53H   [5;72H[24;66H2[5;72H[?25h[?25l[24;53H~@k[5;72H[24;53H   [4;71H[24;63H3,71[4;71H[?25h[?25l[24;53H~@k[4;71H[24;53H   [3;72H[24;63H2,72[3;72H[?25h[?25l[24;53H~@k[3;72H[24;53H   [1;72H[24;63H1[1;72H[?25h[?25l[24;53H~@k[1;72H[24;53H   [3;72H[24;63H2[3;72H[?25h[?25l[24;53H~@k[3;72H[24;53H   [4;71H[24;63H3,71[4;71H[?25h[?25l[24;53H~@k[4;71H[24;53H   [4;70H[24;66H0[4;70H[?25h[?25l[24;53H~@k[4;70H[24;53H   [4;69H[24;65H69[4;69H[?25h[?25l[24;53H~@k[4;69H[24;53H   [4;68H[24;66H8[4;68H[?25h[?25l[24;53H~@k[4;68H[24;53H   [5;68H[24;63H4[5;68H[?25h[?25l[24;53H~@k[5;68H[24;53H   [6;68H[24;63H5[6;68H[?25h[?25l[24;53H~@k[6;68H[24;53H   [7;68H[24;63H6[7;68H[?25h[?25l[24;53H~@k[7;68H[24;53H   [8;62H[24;63H7,62[8;62H[?25h[?25l[24;53H~@k[8;62H[24;53H   [9;68H[24;63H8,68[9;68H[?25h[?25l[24;53H~@k[9;68H[24;53H   [10;66H[24;63H9,66[10;66H[?25h[?25l[24;53H~@k[10;66H[24;53H   [11;68H[24;63H10,68[11;68H[?25h[?25l[24;53H~@k[11;68H[24;53H   [12;68H[24;64H1[12;68H[?25h[?25l[24;53H~@k[12;68H[24;53H   [13;68H[24;64H2[13;68H[?25h[?25l[24;53H~@k[13;68H[24;53H   [14;61H[24;64H3,61[14;61H[?25h[?25l[24;53H~@k[14;61H[24;53H   [15;60H[24;64H4,60[15;60H[?25h[?25l[24;53H~@k[15;60H[24;53H   [16;64H[24;64H5,64[16;64H[?25h[?25l[24;53H~@k[16;64H[24;53H   [17;68H[24;64H6,68[17;68H[?25h[?25l[24;53H~@k[17;68H[24;53H   [18;68H[24;64H7[18;68H[?25h[?25l[24;53H~@k[18;68H[24;53H   [19;68H[24;64H8[19;68H[?25h[?25l[24;53H~@k[19;68H[24;53H   [20;68H[24;64H9[20;68H[?25h[?25l[24;53H~@k[20;68H[24;53H   [21;68H[24;63H20[21;68H[?25h[?25l[24;53H~@k[21;68H[24;53H   [20;68H[24;63H19[20;68H[?25h[?25l[24;53H~@k[20;68H[24;53H   [19;68H[24;64H8[19;68H[?25h[?25l[24;53H~@k[19;68H[24;53H   [18;68H[24;64H7[18;68H[?25h[?25l[24;53H~@k[18;68H[24;53H   [17;68H[24;64H6[17;68H[?25h[?25l[24;53H~@k[17;68H[24;53H   [16;64H[24;64H5,64[16;64H[?25h[?25l[24;53H~@k[16;64H[24;53H   [15;60H[24;64H4,60[15;60H[?25h[?25l[24;53H~@k[15;60H[24;53H   [14;61H[24;64H3,61[14;61H[?25h[?25l[24;53H~@k[14;61H[24;53H   [13;68H[24;64H2,68[13;68H[?25h[?25l[24;53H~@k[13;68H[24;53H   [12;68H[24;64H1[12;68H[?25h[?25l[24;53H~@k[12;68H[24;53H   [11;68H[24;64H0[11;68H[?25h[?25l[24;53H~@k[11;68H[24;53H   [10;66H[24;63H9,66 [10;66H[?25h[?25l[24;53H~@k[10;66H[24;53H   [9;68H[24;63H8,68[9;68H[?25h[?25l[24;53H~@k[9;68H[24;53H   [8;62H[24;63H7,62[8;62H[?25h[?25l[24;53H~@k[8;62H[24;53H   [7;68H[24;63H6,68[7;68H[?25h[?25l[24;53H~@k[7;68H[24;53H   [6;68H[24;63H5[6;68H[?25h[?25l[24;53H~@k[6;68H[24;53H   [5;68H[24;63H4[5;68H[?25h[?25l[24;53H~@k[5;68H[24;53H   [4;68H[24;63H3[4;68H[?25h[?25l[24;53H~@k[4;68H[24;53H   [3;68H[24;63H2[3;68H[?25h[?25l[24;53H~@k[3;68H[24;53H   [3;67H[24;66H7[3;67H[?25h[?25l[24;53H~@k[3;67H[24;53H   [3;66H[24;66H6[3;66H[?25h[?25l[24;53H~@k[3;66H[24;53H   [3;65H[24;66H5[3;65H[?25h[?25l[24;53H~@k[3;65H[24;53H   [3;64H[24;66H4[3;64H[?25h[?25l[24;53H~@k[3;64H[24;53H   [3;63H[24;66H3[3;63H[?25h[?25l[24;53H~@k[3;63H[24;53H   [3;62H[24;66H2[3;62H[?25h[?25l[24;53H~@k[3;62H[24;53H   [3;61H[24;66H1[3;61H[?25h[?25l[24;53H~@k[3;61H[24;53H   [3;60H[24;66H0[3;60H[?25h[?25l[24;53H~@k[3;60H[24;53H   [3;59H[24;65H59[3;59H[?25h[?25l[24;53H~@k[3;59H[24;53H   [3;58H[24;66H8[3;58H[?25h[?25l[24;53H~@k[3;58H[24;53H   [3;57H[24;66H7[3;57H[?25h[?25l[24;53H~@k[3;57H[24;53H   [3;56H[24;66H6[3;56H[?25h[?25l[24;53H~@k[3;56H[24;53H   [3;55H[24;66H5[3;55H[?25h[?25l[24;53H~@k[3;55H[24;53H   [3;54H[24;66H4[3;54H[?25h[?25l[24;53H~@k[3;54H[24;53H   [3;53H[24;66H3[3;53H[?25h[?25l[24;53H~@k[3;53H[24;53H   [3;52H[24;66H2[3;52H[?25h[?25l[24;53H~@k[3;52H[24;53H   [3;51H[24;66H1[3;51H[?25h[?25l[24;53H~@k[3;51H[24;53H   [3;50H[24;66H0[3;50H[?25h[?25l[24;53H~@k[3;50H[24;53H   [3;49H[24;65H49[3;49H[?25h[?25l[24;53H~@k[3;49H[24;53H   [3;48H[24;66H8[3;48H[?25h[?25l[24;53H~@k[3;48H[24;53H   [3;47H[24;66H7[3;47H[?25h[?25l[24;53H~@k[3;47H[24;53H   [3;46H[24;66H6[3;46H[?25h[?25l[24;53H~@k[3;46H[24;53H   [3;45H[24;66H5[3;45H[?25h[?25l[24;53H~@k[3;45H[24;53H   [3;44H[24;66H4[3;44H[?25h[?25l[24;53H~@k[3;44H[24;53H   [3;43H[24;66H3[3;43H[?25h[?25l[24;53H~@k[3;43H[24;53H   [3;42H[24;66H2[3;42H[?25h[?25l[24;53H~@k[3;42H[24;53H   [3;41H[24;66H1[3;41H[?25h[?25l[24;53H~@k[3;41H[24;53H   [3;40H[24;66H0[3;40H[?25h[?25l[24;53H~@k[3;40H[24;53H   [3;39H[24;65H39[3;39H[?25h[?25l[24;53H~@k[3;39H[24;53H   [3;40H[24;65H40[3;40H[?25h[?25l[24;53H~@k[3;40H[24;53H   [3;39H[24;65H39[3;39H[?25h[?25l[24;53H~@k[3;39H[24;53H   [3;38H[24;66H8[3;38H[?25h[?25l[24;53H~@k[3;38H[24;53H   [3;39H[24;66H9[3;39H[?25h[?25l[24;53H~@k[3;39H[24;53H   [3;40H[24;65H40[3;40H[?25h[?25l[24;53Hi[3;40H[24;53H [3;40H[24;1H[1m-- INSERT --[m[24;13H[K[24;63H2,40[10CAll[3;40H[?25h[?25l,25,35,a,6,180,170,l4,3241,191,10[3;73H[K[24;65H39[3;39H[?25h[?25l[24;66H8[3;38H[?25h[?25l,,25,35,a,6,180,170,l4,3241,191,10[3;72H[K[24;66H7[3;37H[?25h[?25l[24;63H3[4;37H[?25h[?25l[24;66H6[4;36H[?25h[?25l, ,25,35,a,6,180,170,l4,3241,191,10[4;71H[K[24;66H5[4;35H[?25h[?25l[24;66H6[4;36H[?25h[?25l[24;66H7[4;37H[?25h[?25l,25,35,a,6,180,170,l4,3241,191,10[4;70H[K[24;66H6[4;36H[?25h[?25l[24;63H4[5;36H[?25h[?25l[24;63H5[6;36H[?25h[?25l[24;63H6[7;36H[?25h[?25l[24;63H7[8;36H[?25h[?25l[24;63H8[9;36H[?25h[24;1H[K[9;35H[?25l[24;53H^[[9;35H[24;53H  [9;36H[24;63H8,35[10CAll[9;35H[?25h[?25l[24;53H:[9;35H[24;53H[K[24;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[?2004l"cars.csv" [dos] 20L, 1447C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ vi cars.csvcat loader1.log4.logls[Ksqlldr userid=zdy262/01591350 control=loader6.ctl [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P.ctl
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1.ctl [A]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:17:07 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Conventional
+Commit point reached - logical record count 20
+
+Table CARS:
+  0 Rows successfully loaded.
+
+Check the log file:
+  loader1.log
+for more information about the load.
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ sqlldr userid=zdy262/01591350 control=loader1.ctl [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvi cars.csv[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat loader1.log
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:17:07 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loader1.ctl
+Data File:      cars.csv
+  Bad File:     cars.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table CARS, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+VIN                                 FIRST     *   ,       CHARACTER            
+SYEAR                                NEXT     *   ,       CHARACTER            
+MAKE                                 NEXT     *   ,       CHARACTER            
+MODEL                                NEXT     *   ,       CHARACTER            
+PRIMCOLOR                            NEXT     *   ,       CHARACTER            
+SECONDCOLOR                          NEXT     *   ,       CHARACTER            
+DOORS                                NEXT     *   ,       CHARACTER            
+ACCELERATION                         NEXT     *   ,       CHARACTER            
+TOPSPEED                             NEXT     *   ,       CHARACTER            
+MPGHI                                NEXT     *   ,       CHARACTER            
+MPGCITY                              NEXT     *   ,       CHARACTER            
+TRANSMISSION                         NEXT     *   ,       CHARACTER            
+NUMGEARS                             NEXT     *   ,       CHARACTER            
+POWEROUTPUT                          NEXT     *   ,       CHARACTER            
+TORQUE                               NEXT     *   ,       CHARACTER            
+CYLINDERS                            NEXT     *   ,       CHARACTER            
+WEIGHT                               NEXT     *   ,       CHARACTER            
+SLENGTH                              NEXT     *   ,       CHARACTER            
+STORENUM                             NEXT     *   ,       CHARACTER            
+
+value used for ROWS parameter changed from 64 to 52
+Record 1: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+Record 2: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 3: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 4: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+Record 5: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 6: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 7: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 8: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 9: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+Record 10: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 11: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 12: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 13: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 14: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 15: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 16: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+Record 17: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 18: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+Record 19: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+Record 20: Rejected - Error on table CARS, column ACCELERATION.
+ORA-01438: value larger than specified precision allowed for this column
+
+
+Table CARS:
+  0 Rows successfully loaded.
+  20 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 254904 bytes(52 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            20
+Total logical records rejected:        20
+Total logical records discarded:        0
+
+Run began on Wed Apr 17 18:17:07 2019
+Run ended on Wed Apr 17 18:17:07 2019
+
+Elapsed time was:     00:00:00.12
+CPU time was:         00:00:00.04
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ cat loader1.logsqlldr userid=zdy262/01591350 control=loader1.ctl [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvi cars.csv[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"cars.csv" [dos] 20L, 1447C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H0,1994,toyota,supra,orange,green,2,51.1,159,21.6,21.6,m,6,280,333,l6,3329,178,100[2;1H0
+1,2014, toyota,camry,silver,black,4,,,25,35,a,6,180,170,l4,3241,191,100
+2,2015,toyota,camry,beige,black,4,,,25,35,a,6,180,170,l4,3241,191,100
+3,2019,alfa romeo,mito,red,,2,11.4,114,61.9,47,m,6,105,107,l2,2491,160,100
+4,2019,porsche,911,silver,,2,3.2,194,26.1,17.8,a,7,520,347,h6,3318,179,100
+5,2017,audi,r8,green,black,2,3.3,204,18.8,18.8,a,7,610,413,v10,3737,174,100
+6,2018,bmw,g20,white,,4,8.5,,57.4,41.3,a,8,150,236,l4,,185,100
+7,2008,chevrolet,express,white,,2,,,18,14,a,4,195,260,v6,4845,224,100
+8,2013,chevrolet,sonic,red,,4,11,,40,29,m,6,140,148,4,2743,159,100
+9,1992,chevrolet,camaro,black,,2,,,35.1,23.1,a,3,91,132,l4,2877,179,100
+10,1982,delorean,dmc-12,silver,,2,9.6,130,21,21,m,5,132,153,v6,2844,168,100
+11,2012,dodge,viper,red,,2,3.5,202,21,12,m,6,649,600,v10,3354,176,100
+12,2009,dodge,ram,blue,,4,,,20,14,a,4,215,235,v6,6025,229,100
+13,2012,dodge,dart,red,,4,,,37,27,a,6,162,184,4,3242,184,100
+14,2014,lexus,nx,grey,,4,7,124,28,21,a,6,238,258,l4,4050,182,100
+15,2016,toyota,Prius,white,,4,10.6,112,71.3,71.3,a,,98,105,l4,3197,179,100
+16,1989,chevrolet,camaro,white,,2,,,35.1,23.1,a,3,91,132,l4,2877,179,100
+17,2004,toyota,corolla,beige,,4,14.5,112,49,49,a,5,90,140,l4,2590,174,100
+18,2008,toyota,corolla,black,,4,14.5,112,49,49,a,5,90,140,l4,2590,174,100
+19,2005,toyota,corolla,silver,,4,14.5,112,49,49,a,5,90,140,l4,2590,174,100
+[1m[34m~                                                                               [23;1H~                                                                               [m[24;63H8,35[10CAll[9;35H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[24;53H~@k[9;35H[24;53H   [9;36H[24;66H6[9;36H[?25h[?25l[24;53H~@k[9;36H[24;53H   [9;37H[24;66H7[9;37H[?25h[?25l[24;53H~@k[9;37H[24;53H   [9;38H[24;66H8[9;38H[?25h[?25l[24;53H~@k[9;38H[24;53H   [9;39H[24;66H9[9;39H[?25h[?25l[24;53H~@k[9;39H[24;53H   [9;40H[24;65H40[9;40H[?25h[?25l[24;53H~@k[9;40H[24;53H   [9;41H[24;66H1[9;41H[?25h[?25l[24;53H~@k[9;41H[24;53H   [9;42H[24;66H2[9;42H[?25h[?25l[24;53H~@k[9;42H[24;53H   [9;43H[24;66H3[9;43H[?25h[?25l[24;53H~@k[9;43H[24;53H   [9;44H[24;66H4[9;44H[?25h[?25l[24;53H~@k[9;44H[24;53H   [9;45H[24;66H5[9;45H[?25h[?25l[24;53H~@k[9;45H[24;53H   [9;46H[24;66H6[9;46H[?25h[?25l[24;53H~@k[9;46H[24;53H   [9;47H[24;66H7[9;47H[?25h[?25l[24;53H~@k[9;47H[24;53H   [9;48H[24;66H8[9;48H[?25h[?25l[24;53H~@k[9;48H[24;53H   [9;49H[24;66H9[9;49H[?25h[?25l[24;53H~@k[9;49H[24;53H   [9;50H[24;65H50[9;50H[?25h[?25l[24;53H~@k[9;50H[24;53H   [9;51H[24;66H1[9;51H[?25h[?25l[24;53H~@k[9;51H[24;53H   [9;52H[24;66H2[9;52H[?25h[?25l[24;53H~@k[9;52H[24;53H   [9;53H[24;66H3[9;53H[?25h[?25l[24;53H~@k[9;53H[24;53H   [9;54H[24;66H4[9;54H[?25h[?25l[24;53H~@k[9;54H[24;53H   [9;55H[24;66H5[9;55H[?25h[?25l[24;53H~@k[9;55H[24;53H   [9;56H[24;66H6[9;56H[?25h[?25l[24;53H~@k[9;56H[24;53H   [9;57H[24;66H7[9;57H[?25h[?25l[24;53H~@k[9;57H[24;53H   [9;58H[24;66H8[9;58H[?25h[?25l[24;53H~@k[9;58H[24;53H   [9;59H[24;66H9[9;59H[?25h[?25l[24;53H~@k[9;59H[24;53H   [9;60H[24;65H60[9;60H[?25h[?25l[24;53H~@k[9;60H[24;53H   [9;61H[24;66H1[9;61H[?25h[?25l[24;53H~@k[9;61H[24;53H   [9;62H[24;66H2[9;62H[?25h[?25l[24;53H~@k[9;62H[24;53H   [9;63H[24;66H3[9;63H[?25h[?25l[24;53H~@k[9;63H[24;53H   [9;64H[24;66H4[9;64H[?25h[?25l[24;53H~@k[9;64H[24;53H   [9;65H[24;66H5[9;65H[?25h[?25l[24;53H~@k[9;65H[24;53H   [9;66H[24;66H6[9;66H[?25h[?25l[24;53H~@k[9;66H[24;53H   [9;67H[24;66H7[9;67H[?25h[?25l[24;53H~@k[9;67H[24;53H   [9;68H[24;66H8[9;68H[?25h[?25l[24;53H~@k[9;68H[24;53H   [9;69H[24;66H9[9;69H[?25h[?25l[24;53H~@k[9;69H[24;53H   [9;69H[?25h[?25l[24;53H~@k[9;69H[24;53H   [9;69H[?25h[?25l[24;53H~@k[9;69H[24;53H   [9;69H[?25h[?25l[24;53H~@k[9;69H[24;53H   [9;69H[?25h[?25l[24;53H~@k[9;69H[24;53H   [9;68H[24;66H8[9;68H[?25h[?25l[24;53H~@k[9;68H[24;53H   [9;67H[24;66H7[9;67H[?25h[?25l[24;53H~@k[9;67H[24;53H   [9;66H[24;66H6[9;66H[?25h[?25l[24;53H~@k[9;66H[24;53H   [9;67H[24;66H7[9;67H[?25h[?25l[24;53H~@k[9;67H[24;53H   [9;68H[24;66H8[9;68H[?25h[?25l[24;53H~@k[9;68H[24;53H   [9;69H[24;66H9[9;69H[?25h[?25l[24;53H~@k[9;69H[24;53H   [9;69H[?25h[?25l[24;53H~@k[9;69H[24;53H   [8;62H[24;63H7,62[8;62H[?25h[?25l[24;53H~@k[8;62H[24;53H   [7;69H[24;63H6,69[7;69H[?25h[?25l[24;53H~@k[7;69H[24;53H   [8;62H[24;63H7,62[8;62H[?25h[?25l[24;53H~@k[8;62H[24;53H   [8;62H[?25h[?25l[24;53H~@k[8;62H[24;53H   [7;69H[24;63H6,69[7;69H[?25h[?25l[24;53H~@k[7;69H[24;53H   [6;69H[24;63H5[6;69H[?25h[?25l[24;53H~@k[6;69H[24;53H   [7;69H[24;63H6[7;69H[?25h[?25l[24;53H~@k[7;69H[24;53H   [8;62H[24;63H7,62[8;62H[?25h[?25l[24;53H~@k[8;62H[24;53H   [7;69H[24;63H6,69[7;69H[?25h[?25l[24;53H~@k[7;69H[24;53H   [7;70H[24;65H70[7;70H[?25h[?25l[24;53H~@k[7;70H[24;53H   [7;71H[24;66H1[7;71H[?25h[?25l[24;53H~@k[7;71H[24;53H   [7;72H[24;66H2[7;72H[?25h[?25l[24;53H~@k[7;72H[24;53H   [7;73H[24;66H3[7;73H[?25h[?25l[24;53H~@k[7;73H[24;53H   [7;74H[24;66H4[7;74H[?25h[?25l[24;53H~@k[7;74H[24;53H   [7;75H[24;66H5[7;75H[?25h[?25l[24;53H~@k[7;75H[24;53H   [7;75H[?25h[?25l[24;53H~@k[7;75H[24;53H   [7;75H[?25h[?25l[24;53H~@k[7;75H[24;53H   [7;75H[?25h[?25l[24;53H~@k[7;75H[24;53H   [7;75H[?25h[?25l[24;53H~@k[7;75H[24;53H   [7;75H[?25h[?25l[24;53H~@k[7;75H[24;53H   [7;75H[?25h[?25l[24;53H~@k[7;75H[24;53H   [7;75H[?25h[?25l[24;53H~@k[7;75H[24;53H   [7;75H[?25h[?25l[24;53H~@k[7;75H[24;53H   [7;75H[?25h[?25l[24;53H~@k[7;75H[24;53H   [7;75H[?25h[?25l[24;53H~@k[7;75H[24;53H   [6;74H[24;63H5,74[6;74H[?25h[?25l[24;53H~@k[6;74H[24;53H   [6;74H[?25h[?25l[24;53H~@k[6;74H[24;53H   [6;73H[24;66H3[6;73H[?25h[?25l[24;53H~@k[6;73H[24;53H   [5;73H[24;63H4[5;73H[?25h[?25l[24;53H~@k[5;73H[24;53H   [4;69H[24;63H3,69[4;69H[?25h[?25l[24;53H~@k[4;69H[24;53H   [3;71H[24;63H2,71[3;71H[?25h[?25l[24;53H~@k[3;71H[24;53H   [1;73H[24;63H1,73[1;73H[?25h[?25l[24;53H~@k[1;73H[24;53H   [3;71H[24;63H2,71[3;71H[?25h[?25l[24;53H~@k[3;71H[24;53H   [1;73H[24;63H1,73[1;73H[?25h[?25l[24;53H~@k[1;73H[24;53H   [1;74H[24;66H4[1;74H[?25h[?25l[24;53H~@k[1;74H[24;53H   [1;75H[24;66H5[1;75H[?25h[?25l[24;53H~@k[1;75H[24;53H   [1;76H[24;66H6[1;76H[?25h[?25l[24;53H~@k[1;76H[24;53H   [1;77H[24;66H7[1;77H[?25h[?25l[24;53H~@k[1;77H[24;53H   [1;78H[24;66H8[1;78H[?25h[?25l[24;53H~@k[1;78H[24;53H   [1;79H[24;66H9[1;79H[?25h[?25l[24;53H~@k[1;79H[24;53H   [1;80H[24;65H80[1;80H[?25h[?25l[24;53H~@k[1;80H[24;53H   [2;1H[24;66H1[2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [1;80H[24;66H0[1;80H[?25h[?25l[24;53H~@k[1;80H[24;53H   [2;1H[24;66H1[2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [3;71H[24;63H2,7[3;71H[?25h[?25l[24;53H:[3;71H[24;1H[K[24;1H:[?2004h[?25hq[?25l[?25h[?25l[?2004l[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0t]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ vi cars.csv[K[K[K[K[K[K[K[K[K[K[Kcd ..
+]0;zdy262@databaselab: ~/tocopyzdy262@databaselab:~/tocopy$ cd q
+]0;zdy262@databaselab: ~/tocopy/qzdy262@databaselab:~/tocopy/q$ vi creator.sql
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"creator.sql" [dos] 85L, 1419C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[33mcreate[m [35mtable[m cars
+(
+VIN int [33mnot[m [35mnull[m,
+sYear int,
+make [32mvarchar[m([31m15[m),
+model [32mvarchar[m([31m15[m),
+primColor [32mvarchar[m([31m9[m),
+secondColor [32mvarchar[m([31m9[m),
+doors int [33mnot[m [35mnull[m,
+[34m--Performance[m
+acceleration [35mdecimal[m([31m2[m,[31m1[m),
+topSpeed int,
+mpgHi [35mdecimal[m([31m3[m,[31m1[m),
+mpgCity [35mdecimal[m([31m3[m,[31m1[m),
+[34m--Specs[m
+transmission [32mchar[m,
+numGears int,
+powerOutput int,
+torque int,
+cylinders [32mvarchar[m([31m10[m),
+[34m--size[m
+weight int,
+sLength [35mdecimal[m([31m4[m,[31m1[m),[24;63H1,1[11CTop[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[24;53H~@k[1;1H[24;53H   [2;1H[24;63H2[2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [3;1H[24;63H3[3;1H[?25h[?25l[24;53H~@k[3;1H[24;53H   [4;1H[24;63H4[4;1H[?25h[?25l[24;53H~@k[4;1H[24;53H   [5;1H[24;63H5[5;1H[?25h[?25l[24;53H~@k[5;1H[24;53H   [6;1H[24;63H6[6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [7;1H[24;63H7[7;1H[?25h[?25l[24;53H~@k[7;1H[24;53H   [8;1H[24;63H8[8;1H[?25h[?25l[24;53H~@k[8;1H[24;53H   [9;1H[24;63H9[9;1H[?25h[?25l[24;53H~@k[9;1H[24;53H   [10;1H[24;63H10,1[10;1H[?25h[?25l[24;53H~@k[10;1H[24;53H   [11;1H[24;64H1[11;1H[?25h[?25l[24;53H~@k[11;1H[24;53H   [12;1H[24;64H2[12;1H[?25h[?25l[24;53H~@k[12;1H[24;53H   [13;1H[24;64H3[13;1H[?25h[?25l[24;53H~@k[13;1H[24;53H   [14;1H[24;64H4[14;1H[?25h[?25l[24;53H~@k[14;1H[24;53H   [13;1H[24;64H3[13;1H[?25h[?25l[24;53H~@k[13;1H[24;53H   [12;1H[24;64H2[12;1H[?25h[?25l[24;53H~@k[12;1H[24;53H   [11;1H[24;64H1[11;1H[?25h[?25l[24;53H~@k[11;1H[24;53H   [11;2H[24;66H2[11;2H[?25h[?25l[24;53H~@k[11;2H[24;53H   [11;3H[24;66H3[11;3H[?25h[?25l[24;53H~@k[11;3H[24;53H   [11;4H[24;66H4[11;4H[?25h[?25l[24;53H~@k[11;4H[24;53H   [11;5H[24;66H5[11;5H[?25h[?25l[24;53H~@k[11;5H[24;53H   [11;6H[24;66H6[11;6H[?25h[?25l[24;66H7[11;7H[?25h[?25l[24;53H~@k[11;7H[24;53H   [11;8H[24;66H8[11;8H[?25h[?25l[24;53H~@k[11;8H[24;53H   [11;9H[24;66H9[11;9H[?25h[?25l[24;53H~@k[11;9H[24;53H   [11;10H[24;66H10[11;10H[?25h[?25l[24;53H~@k[11;10H[24;53H   [11;11H[24;67H1[11;11H[?25h[?25l[24;53H~@k[11;11H[24;53H   [11;12H[24;67H2[11;12H[?25h[?25l[24;53H~@k[11;12H[24;53H   [11;13H[24;67H3[11;13H[?25h[?25l[24;53H~@k[11;13H[24;53H   [11;14H[24;67H4[11;14H[?25h[?25l[24;53H~@k[11;14H[24;53H   [11;15H[24;67H5[11;15H[?25h[?25l[24;53H~@k[11;15H[24;53H   [11;16H[24;67H6[11;16H[?25h[?25l[24;53H~@k[11;16H[24;53H   [11;17H[24;67H7[11;17H[?25h[?25l[24;53H~@k[11;17H[24;53H   [11;18H[24;67H8[11;18H[?25h[?25l[24;53H~@k[11;18H[24;53H   [11;19H[24;67H9[11;19H[?25h[?25l[24;53H~@k[11;19H[24;53H   [11;20H[24;66H20[11;20H[?25h[?25l[24;53H~@k[11;20H[24;53H   [11;21H[46m([3C)[m[24;67H1[11;21H[?25h[?25l[24;53H~@k[11;21H[24;53H   [11;22H([3C)[24;67H2[11;22H[?25h[?25l[24;53H~@k[11;22H[24;53H   [11;23H[24;67H3[11;23H[?25h[?25l[24;53H~@k[11;23H[24;53H   [11;24H[24;67H4[11;24H[?25h[?25l[24;53H~@k[11;24H[24;53H   [11;23H[24;67H3[11;23H[?25h[?25l[24;53H~@k[11;23H[24;53H   [11;22H[24;67H2[11;22H[?25h[?25l[24;53H3[11;22H[?25h[?25l[24;54Hi[11;22H[24;53H  [11;22H[24;1H[1m-- INSERT --[m[24;13H[K[24;63H11,22[9CTop[11;22H[?25h[?25l[24;1H[K[24;1H=[?2004hsqlcomplete#DrillIntoTable()[1m-- INSERT --[m[24;13H[K[24;63H11,23[9CTop[11;23H[?25h[?25l,[31m1[m),[11;26H[K[11;21H[46m([2C)[m[24;67H2[11;22H[?25h[?25l[31m3[m,[31m[46m1[m),([2C[31m1[m[24;67H3[11;23H[?25h[?25l[24;64H2,14[12;14H[?25h[?25l[24;64H3,20[13;20H[?25h[?25l[24;64H4,22[14;22H[?25h[?25l[24;64H5,8 [15;8H[?25h[?25l[24;64H6,19[16;19H[?25h[?25l[24;64H7,14[17;14H[?25h[?25l[24;64H8,17[18;17H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[34m--store[m[24;63H[K[24;63H19,12[10C1%[18;12H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HstoreNum int,[24;63H[K[24;63H20,23[10C3%[18;23H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HPRIMARY KEY (VIN)[24;63H[K[24;63H21,7[11C4%[18;7H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H);[24;63H[K[24;63H22,12[10C6%[18;12H[?25h[?25l[1;23r[23;1H
+[1;24r[24;63H[K[24;63H23,22[10C8%[18;22H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[33mcreate[m [35mtable[m store[24;63H[K[24;63H24,8[11C9%[18;8H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H([24;63H[K[24;63H25,14[9C11%[18;14H[?25h[24;1H[K[18;13H[?25l[24;53H^[[18;13H[24;53H  [18;14H[24;63H25,13[9C11%[18;13H[?25h[?25l[24;53H:[18;13H[24;53H[K[24;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[?2004l"creator.sql" [dos] 85L, 1419C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;zdy262@databaselab: ~/tocopy/qzdy262@databaselab:~/tocopy/q$ vi creator.sql
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"creator.sql" [dos] 85L, 1419C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1HsecondColor [32mvarchar[m([31m9[m),
+doors int [33mnot[m [35mnull[m,
+[34m--Performance[m
+acceleration [35mdecimal[m([31m3[m,[31m1[m),
+topSpeed int,
+mpgHi [35mdecimal[m([31m3[m,[31m1[m),
+mpgCity [35mdecimal[m([31m3[m,[31m1[m),
+[34m--Specs[m
+transmission [32mchar[m,
+numGears int,
+powerOutput int,
+torque int,
+cylinders [32mvarchar[m([31m10[m),
+[34m--size[m
+weight int,
+sLength [35mdecimal[m([31m4[m,[31m1[m),
+[34m--store[m
+storeNum int,
+PRIMARY KEY (VIN)
+);
+
+[33mcreate[m [35mtable[m store
+([24;63H25,13[9C11%[18;13H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[24;53H~@k[18;13H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[18;13H[46m([mVIN[46m)[m[23;1Hhours [32mvarchar[m([31m20[m),[24;1H[K[24;63H26,13[9C12%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;2H[1;23r[23;1H
+[1;24r[17;13H(VIN)[23;1Hstreet [32mvarchar[m([31m30[m),[24;63H[K[24;63H27,2[10C14%[18;2H[?25h[?25l[24;53H~@k[18;2H[24;53H   [18;1H[1;23r[23;1H
+[1;24r[23;1Hcity [32mvarchar[m([31m30[m),[24;63H[K[24;63H28,0-1[8C16%[18;1H[?25h[?25l[24;53H~@k[18;1H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[23;1HsState [32mvarchar[m([31m13[m),[24;63H[K[24;63H29,13[9C17%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;1H[1;23r[23;1H
+[1;24r[23;1Hzip int,[24;63H[K[24;63H30,1[10C19%[18;1H[?25h[?25l[24;53H~@k[18;1H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[23;1HstoreNum int [33mnot[m [35mnull[m,[24;63H[K[24;63H31,13[9C20%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[23;1HPRIMARY KEY (storeNum)[24;63H[K[24;63H32,13[9C22%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[18;13H[46m([2C)[m[23;1H);[24;63H[K[24;63H33,13[9C24%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[17;13H([2C)[24;63H[K[24;63H34,13[9C25%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;8H[1;23r[23;1H
+[1;24r[23;1H[33mcreate[m [35mtable[m employees[24;63H[K[24;63H35,8[10C27%[18;8H[?25h[?25l[24;53H~@k[18;8H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[23;1H([24;63H[K[24;63H36,13[9C29%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[18;13H[46m([8C)[m[23;1H[34m--name[m[24;63H[K[24;63H37,13[9C30%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;2H[1;23r[23;1H
+[1;24r[17;13H([8C)[23;1Hfname [32mvarchar[m([31m15[m) [33mnot[m [35mnull[m,[24;63H[K[24;63H38,2[10C32%[18;2H[?25h[?25l[24;53H~@k[18;2H[24;53H   [18;1H[1;23r[23;1H
+[1;24r[23;1Hmname [32mvarchar[m([31m15[m),[24;63H[K[24;63H39,0-1[8C33%[18;1H[?25h[?25l[24;53H~@k[18;1H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[23;1Hlname [32mvarchar[m([31m20[m) [33mnot[m [35mnull[m,[24;63H[K[24;63H40,13[9C35%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[34m--etc[m[24;63H[K[24;63H41,1[10C37%[18;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1Hpay [35mdecimal[m([31m4[m,[31m2[m),[24;63H[K[24;63H42,6[10C38%[18;6H[?25h[?25l[24;53H~@k[18;6H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[23;1Hposition [32mvarchar[m([31m20[m),[24;63H[K[24;63H43,13[9C40%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[23;1HworkId int [33mnot[m [35mnull[m,[24;63H[K[24;63H44,13[9C41%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[23;1HstoreNum int,[24;63H[K[24;63H45,13[9C43%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;5H[1;23r[23;1H
+[1;24r[23;1HPRIMARY KEY (workId)[24;63H[K[24;63H46,5[10C45%[18;5H[?25h[?25l[24;53H~@k[18;5H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[23;1H);[24;63H[K[24;63H47,13[9C46%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[24;63H[K[24;63H48,13[9C48%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[23;1H[33mcreate[m [35mtable[m customers[24;63H[K[24;63H49,13[9C50%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[23;1H([24;63H[K[24;63H50,13[9C51%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[18;13H[46m([mworkId[46m)[m[23;1Hrepresentative int, [34m--employee's work id[m[24;63H[K[24;63H51,13[9C53%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;2H[1;23r[23;1H
+[1;24r[17;13H(workId)[23;1HphoneNum [32mvarchar[m([31m20[m) [33mnot[m [35mnull[m,[24;63H[K[24;63H52,2[10C54%[18;2H[?25h[?25l[24;53H~@k[18;2H[24;53H   [18;1H[1;23r[23;1H
+[1;24r[23;1Hemail [32mvarchar[m([31m30[m),[24;63H[K[24;63H53,0-1[8C56%[18;1H[?25h[?25l[24;53H~@k[18;1H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[23;1Hstreet [32mvarchar[m([31m30[m),[24;63H[K[24;63H54,13[9C58%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;1H[1;23r[23;1H
+[1;24r[23;1HsState [32mvarchar[m([31m13[m),[24;63H[K[24;63H55,1[10C59%[18;1H[?25h[?25l[24;53H~@k[18;1H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[23;1H[34m--name[m[24;63H[K[24;63H56,13[9C61%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[23;1Hfname [32mvarchar[m([31m15[m) [33mnot[m [35mnull[m,[24;63H[K[24;63H57,13[9C62%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[23;1Hmname [32mvarchar[m([31m15[m),[24;63H[K[24;63H58,13[9C64%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[23;1Hlname [32mvarchar[m([31m15[m) [33mnot[m [35mnull[m,[24;63H[K[24;63H59,13[9C66%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[23;1Hprimary key (phoneNum)[24;63H[K[24;63H60,13[9C67%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;6H[1;23r[23;1H
+[1;24r[23;1H);[24;63H[K[24;63H61,6[10C69%[18;6H[?25h[?25l[24;53H~@k[18;6H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[24;63H[K[24;63H62,13[9C70%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[23;1H[33mcreate[m [35mtable[m schedule[24;63H[K[24;63H63,13[9C72%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[23;1H([24;63H[K[24;63H64,13[9C74%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;13H[1;23r[23;1H
+[1;24r[18;13H[46m([8C)[m[23;1HempId int [33mnot[m [35mnull[m,[24;63H[K[24;63H65,13[9C75%[18;13H[?25h[?25l[24;53H~@k[18;13H[24;53H   [18;2H[1;23r[23;1H
+[1;24r[17;13H([8C)[23;1HschedId [32mdate[m [33mnot[m [35mnull[m,[24;63H[K[24;63H66,2[10C77%[18;2H[?25h[?25l[24;53H~@k[18;2H[24;53H   [17;13H[46m([8C)[m[24;64H5,13[17;13H[?25h[?25l[24;53H~@k[17;13H[24;53H   [16;13H[17;13H([8C)[24;64H4[16;13H[?25h[?25l[24;53H~@k[16;13H[24;53H   [15;13H[24;64H3[15;13H[?25h[?25l[24;53H~@k[15;13H[24;53H   [14;13H[24;64H2[14;13H[?25h[?25l[24;53H~@k[14;13H[24;53H   [13;6H[24;64H1,6 [13;6H[?25h[?25l[24;53H~@k[13;6H[24;53H   [12;13H[24;64H0,13[12;13H[?25h[?25l[24;53H~@k[12;13H[24;53H   [11;13H[24;63H59[11;13H[?25h[?25l[24;53H~@k[11;13H[24;53H   [10;13H[24;64H8[10;13H[?25h[?25l[24;53H~@k[10;13H[24;53H   [9;13H[24;64H7[9;13H[?25h[?25l[24;53H~@k[9;13H[24;53H   [8;13H[24;64H6[8;13H[?25h[?25l[24;53H~@k[8;13H[24;53H   [7;1H[46m([18;1H)[m[24;64H5,1 [7;1H[?25h[?25l[24;53H~@k[7;1H[24;53H   [8;13H[7;1H([18;1H)[24;64H6,13[8;13H[?25h[?25l[24;53H~@k[8;13H[24;53H   [9;13H[24;64H7[9;13H[?25h[?25l[24;53H~@k[9;13H[24;53H   [10;13H[24;64H8[10;13H[?25h[?25l[24;53H~@k[10;13H[24;53H   [9;13H[24;64H7[9;13H[?25h[?25l[24;53H~@k[9;13H[24;53H   [9;14H[24;67H4[9;14H[?25h[?25l[24;53H~@k[9;14H[24;53H   [9;15H[24;67H5[9;15H[?25h[?25l[24;53H~@k[9;15H[24;53H   [9;16H[24;67H6[9;16H[?25h[?25l[24;53H~@k[9;16H[24;53H   [9;17H[46m([2C)[m[24;67H7[9;17H[?25h[?25l[24;53H~@k[9;17H[24;53H   [9;18H([2C)[24;67H8[9;18H[?25h[?25l[24;53H~@k[9;18H[24;53H   [9;19H[24;67H9[9;19H[?25h[?25l[24;53H~@k[9;19H[24;53H   [9;20H[46m([2C)[m[24;66H20[9;20H[?25h[?25l[24;53Hi[9;20H[24;53H [9;20H[24;1H[1m-- INSERT --[m[24;63H[K[24;63H57,20[9C77%[9;20H[?25h[?25l)[46m [m[33mnot[m [35mnul[m[1C,[9;30H[K[9;19H[46m)[m [24;66H19[9;19H[?25h[?25l[31m[46m5[m) [33mnot[m [35mnull[m,[9;19H[31m5[m[46m)[m[24;66H20[9;20H[?25h[?25l([2C)[24;64H8,19[10;19H[?25h[?25l[24;64H9,20[11;20H[?25h[?25l[24;1H[K[24;1H=[?2004hsqlcomplete#DrillOutOfColumns()[11;15H[46m([2C)[m[24;1H[1m-- INSERT --[m[24;13H[K[24;63H59,19[9C77%[11;19H[?25h[?25l([2C)[12;15H[46m([2C)[m[24;63H60[12;19H[?25h[?25l[24;1H[K[24;1H=[?2004hsqlcomplete#DrillOutOfColumns()[1m-- INSERT --[m[24;13H[K[24;63H60,18[9C77%[12;18H[?25h[?25l)[46m,[m[12;19H[K[12;17H[46m)[m,[24;67H7[12;17H[?25h[?25l)[46m,[m[12;18H[K[12;16H[46m)[m,[24;67H6[12;16H[?25h[?25l[31m[46m1[m),[31m1[m[46m)[m[24;67H7[12;17H[?25h[?25l[31m[46m5[m),[31m5[m[46m)[m[24;67H8[12;18H[?25h[24;1H[K[12;17H[?25l[24;53H^[[12;17H[24;53H  [12;18H([2C)[24;63H60,17[9C77%[12;17H[?25h[?25l[24;53H:[12;17H[24;53H[K[24;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[?2004l"creator.sql" [dos] 85L, 1419C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;zdy262@databaselab: ~/tocopy/qzdy262@databaselab:~/tocopy/q$ vi creator.sqlcd q[Kvi creator.sql[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksqlplus
+
+SQL*Plus: Release 12.2.0.1.0 Production on Wed Apr 17 18:21:02 2019
+
+Copyright (c) 1982, 2016, Oracle.  All rights reserved.
+
+Enter user-name: zdy262
+Enter password: 
+Last Successful login time: Wed Apr 17 2019 18:17:07 +00:00
+
+Connected to:
+Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production
+
+SQL> select * from customers
+  2  ;
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	     1 (597)397-8704 x231   Jedediah@carey.co.uk
+005 Laurine Drive	       California    Jerod	     Abel
+Jaskolski
+
+	     2 1-906-729-7762	    Darion@garrick.co.uk
+6091 Emerald Corners	       Texas	     Keith	     Nayeli
+Maggio
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	     3 336.249.6105 x6508   Friedrich@alejandrin.io
+195 Caesar Meadows	       Nebraska      Frederick	     Stephan
+Ritchie
+
+	     4 (324)826-6407 x915   Curt@margarette.org
+4457 Effertz Spur	       Georgia	     Vernice	     Lilyan
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Torphy
+
+	     7 395.863.8232 x27496  Dewayne@dillon.biz
+490 Kirlin Point	       Texas	     Dorcas	     Elian
+Lindgren
+
+	     8 800.801.3515 x7103   Kiel.Mante@rico.me
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+1276 Gerry Loop 	       Maryland      Else	     Dayna
+Schumm
+
+	     9 (385)247-7184	    Audrey.Moore@hester.name
+5095 Clinton Expressway        Wisconsin     Francis	     Kareem
+Beier
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	    10 (217)686-7537 x6429  Betsy@elva.me
+49586 Andreane Ways	       Kansas	     Richmond	     Rose
+Purdy
+
+	    11 041-696-6901 x9680   Janelle@baylee.info
+4106 Rolfson Forks	       Massachusetts Royce	     Albin
+Johns
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	    12 223.308.0821 x97263  Misael@lilyan.me
+94273 Leuschke Path	       Minnesota     Brianne	     Benedict
+Osinski
+
+	    13 (789)185-1107 x93867 Mckenna@berenice.name
+9579 Guiseppe Green	       Mississippi   Kavon	     Clemmie
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Emard
+
+	    15 830-628-6778 x477    Devon@taryn.co.uk
+954 Daphne Place	       South Dakota  Shaina	     Brendan
+Osinski
+
+	    16 488.342.9430 x74953  Arch@magdalen.io
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+933 Waelchi View	       Michigan      Chaz	     Astrid
+Ernser
+
+	    17 867.676.3414 x85365  Carter@lexie.us
+92078 Cara Ferry	       Ohio	     Brittany	     Odie
+Steuber
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	    18 166.985.2665 x4371   Cali@adrian.org
+187 Gloria Corner	       Connecticut   Dylan	     Bernadette
+Rutherford
+
+	    19 (163)448-8262 x7963  Edythe.DuBuque@dahlia.name
+5366 Weimann Drive	       Georgia	     Garrett	     Gabriel
+Sawayn
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	    20 077.954.8824 x374    Eleazar.Considine@willa.me
+72385 Collins Forges	       Washington    Mariah	     Naomie
+Johns
+
+	    21 467.622.8637 x5225   Aliyah@ayden.info
+46819 Gaylord Village	       Maine	     Fausto	     Mariane
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Bins
+
+	    22 885.755.8046 x99610  Brett_Miller@isabella.info
+195 Christiansen Burgs	       Tennessee     Georgianna      Geovanni
+Ortiz
+
+	    23 (660)683-2301	    Clarissa@elroy.io
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+55048 Bode Center	       Illinois      Loren	     Santina
+O'Keefe
+
+	    24 (361)573-9250	    Shane@gonzalo.name
+86786 Harber Fort	       Maryland      Bennie	     Meagan
+Stoltenberg
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	    25 682-094-7713 x7871   Madilyn@ryley.ca
+15221 Rylan Crescent	       North Dakota  Deven	     Layla
+Kunze
+
+	     2 907.720.9864	    Arnold_Hagenes@ben.co.uk
+64568 Cremin Station	       South Dakota  Virgie	     Price
+Ferry
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	     2 608.705.6152	    Hermina_Yundt@ophelia.io
+33011 Camryn Fords	       Arkansas      Keven	     Camren
+Herzog
+
+	     8 1-050-694-5587	    Rocio_Rice@marisol.info
+6136 Mathilde Spurs	       Georgia	     Rowan	     Andy
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Kohler
+
+	     1 1-190-443-9451 x527  Finn_Raynor@trevion.co.uk
+4000 Twila Pines	       New Jersey    Alfonso	     Jalyn
+Senger
+
+	     2 (283)061-3276 x12618 Jamarcus_Kozey@braulio.me
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+7936 Emmerich Brooks	       Missouri      Jackson	     Alessandro
+Hansen
+
+	     4 889-702-0349 x734    Randall_Abernathy@gilda.org
+9204 Schmidt Garden	       Vermont	     Emil	     Estel
+Yost
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	     5 1-567-304-3083	    Jeffrey_Crona@aimee.org
+0612 Runolfsdottir Springs     Idaho	     Daisy	     Morton
+Luettgen
+
+	     6 328-998-5057 x828    Kirstin_Leffler@fabian.co.uk
+5728 Guido Crossing	       Utah	     Kenyatta	     Anabelle
+Bartell
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	     7 409-684-0389 x7381   Jonathon@alexie.name
+18800 Quincy Glens	       Mississippi   Jamaal	     Edyth
+Prosacco
+
+	     8 153-958-7076	    Jed_Pacocha@cedrick.info
+32606 Bogan Street	       Pennsylvania  Tad	     Ryann
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Heaney
+
+	     4 294-263-0510 x031    April_Cronin@oma.co.uk
+14108 Mack Corner	       West Virginia Kailyn	     Tyree
+Kris
+
+	     1 (377)736-9984	    Davonte.Ruecker@glen.io
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+6562 Bernhard Points	       North Dakota  Eulah	     Haven
+Ortiz
+
+	     2 1-742-635-4996	    Darlene@danyka.tv
+394 Jettie Avenue	       Montana	     Brad	     Herminia
+Wunsch
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	     4 1-587-073-8854	    Nikita_Leuschke@brock.name
+61423 Brock Ranch	       Connecticut   Hassie	     Conor
+Pfeffer
+
+	     4 1-780-330-1875	    Macie@melvin.co.uk
+39156 Elmo Parkway	       Rhode Island  Ismael	     Bart
+Welch
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	     5 1-974-937-8281	    Hailey_Ruecker@vincenza.info
+374 Harry Union 	       Wyoming	     Angelina	     Davin
+Kirlin
+
+	     6 (324)644-4738	    Keanu@nyah.tv
+041 Mante Ports 	       Louisiana     Harley	     Mathilde
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Corkery
+
+	     8 086.591.7130	    Myron.Wisozk@bradley.biz
+284 Gertrude Orchard	       Ohio	     Retha	     Claudine
+Thiel
+
+	     4 852.141.2934	    Carli@jarod.net
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+0896 Dicki E_states	       Montana	     Godfrey	     Nat
+Parisian
+
+	     5 175-434-5675	    Bailee@izabella.net
+064 Huel Grove		       Pennsylvania  Xavier	     Brook
+Bradtke
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	     1 (768)027-6396 x8961  Myrna_Stark@evalyn.biz
+168 Verlie Path 	       Washington    Eliseo	     Lowell
+Lindgren
+
+	     2 (187)819-4323 x089   Emie@lonzo.org
+51195 Funk Creek	       New Jersey    Kody	     Art
+Ortiz
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	    23 501-173-4655 x693    Tom@adam.biz
+817 Sven Village	       Maryland      Aiden	     Garfield
+Bruen
+
+	     4 281-867-7881	    Marcus_Schmidt@norberto.org
+5089 Helmer Lake	       Maine	     Jayce	     Mollie
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Nader
+
+	     5 1-141-463-1520	    Elissa_Robel@colleen.com
+2853 Savion Loaf	       Alabama	     Adela	     Tressa
+Rice
+
+	     5 019-322-4636	    Alexane_Ratke@ezekiel.co.uk
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+488 Cassin Trace	       Oklahoma      Antwan	     Annie
+Wilderman
+
+	     5 (968)144-3482 x73538 Harvey.Rippin@katelynn.ca
+1137 Hoppe Oval 	       Arizona	     Doyle	     Jaylan
+Rohan
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	     8 819-199-6455 x2173   Abbie@rosario.info
+597 O'Kon Rapids	       New Jersey    Rebeka	     Myrtie
+Murphy
+
+	     6 (690)480-1714	    Ben@luther.biz
+23245 Walker Shores	       Oregon	     Hellen	     Lucas
+Crist
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	     1 444.108.8086 x958    Arvel.Kertzmann@estella.tv
+477 Edd Lake		       Maine	     Johnson	     Colten
+Boyer
+
+	     6 (166)682-3144	    Tabitha.Wintheiser@lamar.org
+12442 Presley Shoals	       California    Leonardo	     Ona
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Grady
+
+	     3 (539)315-9671	    Rod@sterling.info
+222 Morar Tunnel	       Utah	     Claudie	     Marjolaine
+Leffler
+
+	     4 1-880-524-4314	    Jordan@eula.us
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+5211 Nienow Cove	       Iowa	     Maximillian     Earl
+Boehm
+
+	     6 619-741-3181 x181    Morgan.Conn@judd.us
+6624 Hailey Lock	       New Mexico    Adelbert	     Abelardo
+Kilback
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	     6 1-357-739-0030	    Sidney.Reichel@kayden.info
+22973 Bernhard Inlet	       Idaho	     Arne	     Arnold
+Cummerata
+
+	     7 729.392.3343 x9282   Cary.Wisozk@opal.co.uk
+097 Treutel Mission	       Minnesota     Rosario	     Alfreda
+Pouros
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	     8 1-653-697-8578 x857  Charity@roslyn.net
+95918 Hansen Fort	       North Dakota  Fatima	     Triston
+Labadie
+
+	     9 (693)144-7143 x19087 Stanley@bennett.co.uk
+23711 Crystal Way	       Nebraska      Cruz	     Deon
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Hodkiewicz
+
+	     7 (006)782-1759 x291   Connie@savion.biz
+96652 Fay Ports 	       North Dakota  Stephania	     Sage
+Marquardt
+
+	     1 522-371-1611 x0362   Toy.Jaskolski@felicita.ca
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+398 Mack Spur		       Georgia	     Hazel	     Augustus
+Runte
+
+	     2 408-704-2947	    Lexus@larry.me
+718 Renner Ville	       New York      Gardner	     Bernhard
+Fadel
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	     3 998-026-0814 x238    Clinton.Lubowitz@lance.com
+506 Harber Pike 	       Missouri      Abdul	     Maida
+Howe
+
+	     4 (047)608-9244	    Tommie@zechariah.org
+72292 Herminio Parkways        Wyoming	     Bulah	     Jedidiah
+Kovacek
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	     3 1-482-869-9310 x930  Estel@shyann.ca
+095 Alfreda Skyway	       Alaska	     Bert	     Philip
+Runte
+
+	     3 1-284-892-3999 x1267 Green@freddy.biz
+274 Halvorson Extensions       Maryland      Celestino	     Johnnie
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Swift
+
+	     2 427-643-8412	    Garland@tyree.ca
+6065 Crona Falls	       Kentucky      Jaylen	     Louvenia
+Zulauf
+
+	     1 1-528-843-9708 x9763 Tanya@skylar.ca
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+873 Mohr Ridge		       Florida	     Bo 	     Rudolph
+Gerhold
+
+	     9 256-154-6059	    Sally@christiana.ca
+799 Yolanda Shoal	       Ohio	     Rex	     Dustin
+Macejkovic
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	    19 695.466.5943 x730    Kaela@shanelle.biz
+66760 Hickle Station	       Georgia	     Elizabeth	     Kellen
+Schneider
+
+	    18 139.763.1285	    Gregorio@maryse.name
+9807 Quitzon Parkways	       Georgia	     Aimee	     Jeramy
+Ward
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	    14 1-268-493-2721	    Lacey_Erdman@felix.name
+7955 Pagac Land 	       New Hampshire Ruth	     Deven
+Hudson
+
+	     2 021.378.0987 x91674  Tatyana@elvie.tv
+68086 Homenick Place	       Arkansas      Anibal	     Destany
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Borer
+
+	     1 216-120-9843 x062    Sabrina@jeanette.io
+881 Corbin Crest	       Kansas	     Antonina	     Fabiola
+Koss
+
+	     1 (986)068-5621 x027   Madison_Cormier@electa.us
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+2958 Walsh Locks	       Ohio	     Elbert	     Virginie
+Wilderman
+
+	     1 308.939.6341 x153    Johnpaul@ines.me
+356 Boyer Knolls	       Nebraska      Ethan	     Joy
+Williamson
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	     1 (141)077-8258	    Eda@floyd.co.uk
+8519 Boyd Crossroad	       New Jersey    Chasity	     Lindsay
+O'Connell
+
+	    20 1-134-357-8239	    Cicero@reginald.biz
+41082 Conroy Mission	       Montana	     Ruby	     Mittie
+Tillman
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	     5 (624)054-2755	    Viviane_Kuhlman@elouise.name
+340 Walter Drives	       Michigan      August	     Philip
+O'Keefe
+
+	     1 1-947-300-2574	    Garrett_Bauch@helena.biz
+960 Sister Creek	       Georgia	     Alia	     Dahlia
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Swaniawski
+
+	     3 1-544-917-9592 x9517 Norris_Marvin@malinda.tv
+156 Kathryne Vista	       Massachusetts Kip	     Angelita
+Schaefer
+
+	     2 533.967.0156 x93025  Alene@gail.me
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+062 Abbott Plaza	       Delaware      Gerda	     Tracy
+Bradtke
+
+	     5 (782)598-9461 x235   Macie.Ullrich@damien.ca
+2630 Eulah Loaf 	       New Jersey    Bonita	     Ronaldo
+Von
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	     3 774-757-2269 x0378   Michaela_Tromp@rita.org
+06333 Anderson Radial	       California    Price	     Nichole
+Kub
+
+	     2 (267)432-4097 x5561  Colton@prudence.me
+2845 Gottlieb Springs	       South Dakota  Rickey	     Wilber
+Schuster
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	     1 1-530-672-7536	    Murray_Ziemann@robbie.tv
+2079 Ezequiel Forges	       Idaho	     Eleazar	     Karli
+Cruickshank
+
+
+87 rows selected.
+
+SQL> ^[[A    select * from customers
+  2  ;
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	     1 (597)397-8704 x231   Jedediah@carey.co.uk
+005 Laurine Drive	       California    Jerod	     Abel
+Jaskolski
+
+	     2 1-906-729-7762	    Darion@garrick.co.uk
+6091 Emerald Corners	       Texas	     Keith	     Nayeli
+Maggio
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	     3 336.249.6105 x6508   Friedrich@alejandrin.io
+195 Caesar Meadows	       Nebraska      Frederick	     Stephan
+Ritchie
+
+	     4 (324)826-6407 x915   Curt@margarette.org
+4457 Effertz Spur	       Georgia	     Vernice	     Lilyan
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Torphy
+
+	     7 395.863.8232 x27496  Dewayne@dillon.biz
+490 Kirlin Point	       Texas	     Dorcas	     Elian
+Lindgren
+
+	     8 800.801.3515 x7103   Kiel.Mante@rico.me
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+1276 Gerry Loop 	       Maryland      Else	     Dayna
+Schumm
+
+	     9 (385)247-7184	    Audrey.Moore@hester.name
+5095 Clinton Expressway        Wisconsin     Francis	     Kareem
+Beier
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	    10 (217)686-7537 x6429  Betsy@elva.me
+49586 Andreane Ways	       Kansas	     Richmond	     Rose
+Purdy
+
+	    11 041-696-6901 x9680   Janelle@baylee.info
+4106 Rolfson Forks	       Massachusetts Royce	     Albin
+Johns
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	    12 223.308.0821 x97263  Misael@lilyan.me
+94273 Leuschke Path	       Minnesota     Brianne	     Benedict
+Osinski
+
+	    13 (789)185-1107 x93867 Mckenna@berenice.name
+9579 Guiseppe Green	       Mississippi   Kavon	     Clemmie
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Emard
+
+	    15 830-628-6778 x477    Devon@taryn.co.uk
+954 Daphne Place	       South Dakota  Shaina	     Brendan
+Osinski
+
+	    16 488.342.9430 x74953  Arch@magdalen.io
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+933 Waelchi View	       Michigan      Chaz	     Astrid
+Ernser
+
+	    17 867.676.3414 x85365  Carter@lexie.us
+92078 Cara Ferry	       Ohio	     Brittany	     Odie
+Steuber
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	    18 166.985.2665 x4371   Cali@adrian.org
+187 Gloria Corner	       Connecticut   Dylan	     Bernadette
+Rutherford
+
+	    19 (163)448-8262 x7963  Edythe.DuBuque@dahlia.name
+5366 Weimann Drive	       Georgia	     Garrett	     Gabriel
+Sawayn
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	    20 077.954.8824 x374    Eleazar.Considine@willa.me
+72385 Collins Forges	       Washington    Mariah	     Naomie
+Johns
+
+	    21 467.622.8637 x5225   Aliyah@ayden.info
+46819 Gaylord Village	       Maine	     Fausto	     Mariane
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Bins
+
+	    22 885.755.8046 x99610  Brett_Miller@isabella.info
+195 Christiansen Burgs	       Tennessee     Georgianna      Geovanni
+Ortiz
+
+	    23 (660)683-2301	    Clarissa@elroy.io
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+55048 Bode Center	       Illinois      Loren	     Santina
+O'Keefe
+
+	    24 (361)573-9250	    Shane@gonzalo.name
+86786 Harber Fort	       Maryland      Bennie	     Meagan
+Stoltenberg
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	    25 682-094-7713 x7871   Madilyn@ryley.ca
+15221 Rylan Crescent	       North Dakota  Deven	     Layla
+Kunze
+
+	     2 907.720.9864	    Arnold_Hagenes@ben.co.uk
+64568 Cremin Station	       South Dakota  Virgie	     Price
+Ferry
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	     2 608.705.6152	    Hermina_Yundt@ophelia.io
+33011 Camryn Fords	       Arkansas      Keven	     Camren
+Herzog
+
+	     8 1-050-694-5587	    Rocio_Rice@marisol.info
+6136 Mathilde Spurs	       Georgia	     Rowan	     Andy
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Kohler
+
+	     1 1-190-443-9451 x527  Finn_Raynor@trevion.co.uk
+4000 Twila Pines	       New Jersey    Alfonso	     Jalyn
+Senger
+
+	     2 (283)061-3276 x12618 Jamarcus_Kozey@braulio.me
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+7936 Emmerich Brooks	       Missouri      Jackson	     Alessandro
+Hansen
+
+	     4 889-702-0349 x734    Randall_Abernathy@gilda.org
+9204 Schmidt Garden	       Vermont	     Emil	     Estel
+Yost
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	     5 1-567-304-3083	    Jeffrey_Crona@aimee.org
+0612 Runolfsdottir Springs     Idaho	     Daisy	     Morton
+Luettgen
+
+	     6 328-998-5057 x828    Kirstin_Leffler@fabian.co.uk
+5728 Guido Crossing	       Utah	     Kenyatta	     Anabelle
+Bartell
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	     7 409-684-0389 x7381   Jonathon@alexie.name
+18800 Quincy Glens	       Mississippi   Jamaal	     Edyth
+Prosacco
+
+	     8 153-958-7076	    Jed_Pacocha@cedrick.info
+32606 Bogan Street	       Pennsylvania  Tad	     Ryann
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Heaney
+
+	     4 294-263-0510 x031    April_Cronin@oma.co.uk
+14108 Mack Corner	       West Virginia Kailyn	     Tyree
+Kris
+
+	     1 (377)736-9984	    Davonte.Ruecker@glen.io
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+6562 Bernhard Points	       North Dakota  Eulah	     Haven
+Ortiz
+
+	     2 1-742-635-4996	    Darlene@danyka.tv
+394 Jettie Avenue	       Montana	     Brad	     Herminia
+Wunsch
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	     4 1-587-073-8854	    Nikita_Leuschke@brock.name
+61423 Brock Ranch	       Connecticut   Hassie	     Conor
+Pfeffer
+
+	     4 1-780-330-1875	    Macie@melvin.co.uk
+39156 Elmo Parkway	       Rhode Island  Ismael	     Bart
+Welch
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	     5 1-974-937-8281	    Hailey_Ruecker@vincenza.info
+374 Harry Union 	       Wyoming	     Angelina	     Davin
+Kirlin
+
+	     6 (324)644-4738	    Keanu@nyah.tv
+041 Mante Ports 	       Louisiana     Harley	     Mathilde
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Corkery
+
+	     8 086.591.7130	    Myron.Wisozk@bradley.biz
+284 Gertrude Orchard	       Ohio	     Retha	     Claudine
+Thiel
+
+	     4 852.141.2934	    Carli@jarod.net
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+0896 Dicki E_states	       Montana	     Godfrey	     Nat
+Parisian
+
+	     5 175-434-5675	    Bailee@izabella.net
+064 Huel Grove		       Pennsylvania  Xavier	     Brook
+Bradtke
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	     1 (768)027-6396 x8961  Myrna_Stark@evalyn.biz
+168 Verlie Path 	       Washington    Eliseo	     Lowell
+Lindgren
+
+	     2 (187)819-4323 x089   Emie@lonzo.org
+51195 Funk Creek	       New Jersey    Kody	     Art
+Ortiz
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	    23 501-173-4655 x693    Tom@adam.biz
+817 Sven Village	       Maryland      Aiden	     Garfield
+Bruen
+
+	     4 281-867-7881	    Marcus_Schmidt@norberto.org
+5089 Helmer Lake	       Maine	     Jayce	     Mollie
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Nader
+
+	     5 1-141-463-1520	    Elissa_Robel@colleen.com
+2853 Savion Loaf	       Alabama	     Adela	     Tressa
+Rice
+
+	     5 019-322-4636	    Alexane_Ratke@ezekiel.co.uk
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+488 Cassin Trace	       Oklahoma      Antwan	     Annie
+Wilderman
+
+	     5 (968)144-3482 x73538 Harvey.Rippin@katelynn.ca
+1137 Hoppe Oval 	       Arizona	     Doyle	     Jaylan
+Rohan
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	     8 819-199-6455 x2173   Abbie@rosario.info
+597 O'Kon Rapids	       New Jersey    Rebeka	     Myrtie
+Murphy
+
+	     6 (690)480-1714	    Ben@luther.biz
+23245 Walker Shores	       Oregon	     Hellen	     Lucas
+Crist
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	     1 444.108.8086 x958    Arvel.Kertzmann@estella.tv
+477 Edd Lake		       Maine	     Johnson	     Colten
+Boyer
+
+	     6 (166)682-3144	    Tabitha.Wintheiser@lamar.org
+12442 Presley Shoals	       California    Leonardo	     Ona
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Grady
+
+	     3 (539)315-9671	    Rod@sterling.info
+222 Morar Tunnel	       Utah	     Claudie	     Marjolaine
+Leffler
+
+	     4 1-880-524-4314	    Jordan@eula.us
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+5211 Nienow Cove	       Iowa	     Maximillian     Earl
+Boehm
+
+	     6 619-741-3181 x181    Morgan.Conn@judd.us
+6624 Hailey Lock	       New Mexico    Adelbert	     Abelardo
+Kilback
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	     6 1-357-739-0030	    Sidney.Reichel@kayden.info
+22973 Bernhard Inlet	       Idaho	     Arne	     Arnold
+Cummerata
+
+	     7 729.392.3343 x9282   Cary.Wisozk@opal.co.uk
+097 Treutel Mission	       Minnesota     Rosario	     Alfreda
+Pouros
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	     8 1-653-697-8578 x857  Charity@roslyn.net
+95918 Hansen Fort	       North Dakota  Fatima	     Triston
+Labadie
+
+	     9 (693)144-7143 x19087 Stanley@bennett.co.uk
+23711 Crystal Way	       Nebraska      Cruz	     Deon
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Hodkiewicz
+
+	     7 (006)782-1759 x291   Connie@savion.biz
+96652 Fay Ports 	       North Dakota  Stephania	     Sage
+Marquardt
+
+	     1 522-371-1611 x0362   Toy.Jaskolski@felicita.ca
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+398 Mack Spur		       Georgia	     Hazel	     Augustus
+Runte
+
+	     2 408-704-2947	    Lexus@larry.me
+718 Renner Ville	       New York      Gardner	     Bernhard
+Fadel
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	     3 998-026-0814 x238    Clinton.Lubowitz@lance.com
+506 Harber Pike 	       Missouri      Abdul	     Maida
+Howe
+
+	     4 (047)608-9244	    Tommie@zechariah.org
+72292 Herminio Parkways        Wyoming	     Bulah	     Jedidiah
+Kovacek
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	     3 1-482-869-9310 x930  Estel@shyann.ca
+095 Alfreda Skyway	       Alaska	     Bert	     Philip
+Runte
+
+	     3 1-284-892-3999 x1267 Green@freddy.biz
+274 Halvorson Extensions       Maryland      Celestino	     Johnnie
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Swift
+
+	     2 427-643-8412	    Garland@tyree.ca
+6065 Crona Falls	       Kentucky      Jaylen	     Louvenia
+Zulauf
+
+	     1 1-528-843-9708 x9763 Tanya@skylar.ca
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+873 Mohr Ridge		       Florida	     Bo 	     Rudolph
+Gerhold
+
+	     9 256-154-6059	    Sally@christiana.ca
+799 Yolanda Shoal	       Ohio	     Rex	     Dustin
+Macejkovic
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	    19 695.466.5943 x730    Kaela@shanelle.biz
+66760 Hickle Station	       Georgia	     Elizabeth	     Kellen
+Schneider
+
+	    18 139.763.1285	    Gregorio@maryse.name
+9807 Quitzon Parkways	       Georgia	     Aimee	     Jeramy
+Ward
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	    14 1-268-493-2721	    Lacey_Erdman@felix.name
+7955 Pagac Land 	       New Hampshire Ruth	     Deven
+Hudson
+
+	     2 021.378.0987 x91674  Tatyana@elvie.tv
+68086 Homenick Place	       Arkansas      Anibal	     Destany
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Borer
+
+	     1 216-120-9843 x062    Sabrina@jeanette.io
+881 Corbin Crest	       Kansas	     Antonina	     Fabiola
+Koss
+
+	     1 (986)068-5621 x027   Madison_Cormier@electa.us
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+2958 Walsh Locks	       Ohio	     Elbert	     Virginie
+Wilderman
+
+	     1 308.939.6341 x153    Johnpaul@ines.me
+356 Boyer Knolls	       Nebraska      Ethan	     Joy
+Williamson
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	     1 (141)077-8258	    Eda@floyd.co.uk
+8519 Boyd Crossroad	       New Jersey    Chasity	     Lindsay
+O'Connell
+
+	    20 1-134-357-8239	    Cicero@reginald.biz
+41082 Conroy Mission	       Montana	     Ruby	     Mittie
+Tillman
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	     5 (624)054-2755	    Viviane_Kuhlman@elouise.name
+340 Walter Drives	       Michigan      August	     Philip
+O'Keefe
+
+	     1 1-947-300-2574	    Garrett_Bauch@helena.biz
+960 Sister Creek	       Georgia	     Alia	     Dahlia
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+Swaniawski
+
+	     3 1-544-917-9592 x9517 Norris_Marvin@malinda.tv
+156 Kathryne Vista	       Massachusetts Kip	     Angelita
+Schaefer
+
+	     2 533.967.0156 x93025  Alene@gail.me
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+062 Abbott Plaza	       Delaware      Gerda	     Tracy
+Bradtke
+
+	     5 (782)598-9461 x235   Macie.Ullrich@damien.ca
+2630 Eulah Loaf 	       New Jersey    Bonita	     Ronaldo
+Von
+
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+	     3 774-757-2269 x0378   Michaela_Tromp@rita.org
+06333 Anderson Radial	       California    Price	     Nichole
+Kub
+
+	     2 (267)432-4097 x5561  Colton@prudence.me
+2845 Gottlieb Springs	       South Dakota  Rickey	     Wilber
+Schuster
+
+REPRESENTATIVE PHONENUM 	    EMAIL
+-------------- -------------------- ------------------------------
+STREET			       SSTATE	     FNAME	     MNAME
+------------------------------ ------------- --------------- ---------------
+LNAME
+---------------
+
+	     1 1-530-672-7536	    Murray_Ziemann@robbie.tv
+2079 Ezequiel Forges	       Idaho	     Eleazar	     Karli
+Cruickshank
+
+
+87 rows selected.
+
+SQL> start destroyer.sql
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+SQL> start creator.sql
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> exit
+Disconnected from Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production
+]0;zdy262@databaselab: ~/tocopy/qzdy262@databaselab:~/tocopy/q$ sqlplusvi creator.sqlcd q[K..vi cars.csvcat loader1.logsqlldr userid=zdy262/01591350 control=loader1.ctl
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:24:03 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+SQL*Loader-500: Unable to open file (loader1.ctl)
+SQL*Loader-553: file not found
+SQL*Loader-509: System error: No such file or directory
+]0;zdy262@databaselab: ~/tocopy/qzdy262@databaselab:~/tocopy/q$ cd ../d
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ cd ../dsqlldr userid=zdy262/01591350 control=loader1.ctl
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:24:16 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Conventional
+Commit point reached - logical record count 20
+
+Table CARS:
+  0 Rows successfully loaded.
+
+Check the log file:
+  loader1.log
+for more information about the load.
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ sqlldr userid=zdy262/01591350 control=loader1.ctl[1P.ctl4.ctl
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:24:21 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Conventional
+Commit point reached - logical record count 64
+Commit point reached - logical record count 100
+
+Table CUSTOMERS:
+  99 Rows successfully loaded.
+
+Check the log file:
+  loader4.log
+for more information about the load.
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ sqlldr userid=zdy262/01591350 control=loader4.ctl1.ctl[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ../d[Ksqlldr userid=zdy262/01591350 control=loader1.ctl[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cplus[Kvi creator.sqlcd q[K..vi cars.csvcat loader1.log[1P.log4.log
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:24:21 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loader4.ctl
+Data File:      customers.csv
+  Bad File:     customers.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table CUSTOMERS, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+REPRESENTATIVE                      FIRST     *   ,       CHARACTER            
+PHONENUM                             NEXT     *   ,       CHARACTER            
+MNAME                                NEXT     *   ,       CHARACTER            
+LNAME                                NEXT     *   ,       CHARACTER            
+SSTATE                               NEXT     *   ,       CHARACTER            
+STREET                               NEXT     *   ,       CHARACTER            
+FNAME                                NEXT     *   ,       CHARACTER            
+EMAIL                                NEXT     *   ,       CHARACTER            
+
+Record 34: Rejected - Error on table CUSTOMERS, column EMAIL.
+ORA-12899: value too large for column "ZDY262"."CUSTOMERS"."EMAIL" (actual: 33, maximum: 30)
+
+
+Table CUSTOMERS:
+  99 Rows successfully loaded.
+  1 Row not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 132096 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:           100
+Total logical records rejected:         1
+Total logical records discarded:        0
+
+Run began on Wed Apr 17 18:24:21 2019
+Run ended on Wed Apr 17 18:24:21 2019
+
+Elapsed time was:     00:00:00.15
+CPU time was:         00:00:00.04
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ cat loader4.logsqlldr userid=zdy262/01591350 control=loader4.ctl[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat loader4.log[K[Kcat loader4.log[1P.log1.log
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:24:16 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loader1.ctl
+Data File:      cars.csv
+  Bad File:     cars.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table CARS, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+VIN                                 FIRST     *   ,       CHARACTER            
+SYEAR                                NEXT     *   ,       CHARACTER            
+MAKE                                 NEXT     *   ,       CHARACTER            
+MODEL                                NEXT     *   ,       CHARACTER            
+PRIMCOLOR                            NEXT     *   ,       CHARACTER            
+SECONDCOLOR                          NEXT     *   ,       CHARACTER            
+DOORS                                NEXT     *   ,       CHARACTER            
+ACCELERATION                         NEXT     *   ,       CHARACTER            
+TOPSPEED                             NEXT     *   ,       CHARACTER            
+MPGHI                                NEXT     *   ,       CHARACTER            
+MPGCITY                              NEXT     *   ,       CHARACTER            
+TRANSMISSION                         NEXT     *   ,       CHARACTER            
+NUMGEARS                             NEXT     *   ,       CHARACTER            
+POWEROUTPUT                          NEXT     *   ,       CHARACTER            
+TORQUE                               NEXT     *   ,       CHARACTER            
+CYLINDERS                            NEXT     *   ,       CHARACTER            
+WEIGHT                               NEXT     *   ,       CHARACTER            
+SLENGTH                              NEXT     *   ,       CHARACTER            
+STORENUM                             NEXT     *   ,       CHARACTER            
+
+value used for ROWS parameter changed from 64 to 52
+Record 1: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 2: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 3: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 4: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 5: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 6: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 7: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 8: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 9: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 10: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 11: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 12: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 13: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 14: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 15: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 16: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 17: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 18: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 19: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+Record 20: Rejected - Error on table CARS, column STORENUM.
+ORA-01722: invalid number
+
+
+Table CARS:
+  0 Rows successfully loaded.
+  20 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 254904 bytes(52 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            20
+Total logical records rejected:        20
+Total logical records discarded:        0
+
+Run began on Wed Apr 17 18:24:16 2019
+Run ended on Wed Apr 17 18:24:16 2019
+
+Elapsed time was:     00:00:00.14
+CPU time was:         00:00:00.03
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ cat loader1.log4.logsqlldr userid=zdy262/01591350 control=loader4.ctl[1P.ctl2.ctl
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:26:52 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Conventional
+Commit point reached - logical record count 25
+
+Table EMPLOYEES:
+  0 Rows successfully loaded.
+
+Check the log file:
+  loader2.log
+for more information about the load.
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ sqlldr userid=zdy262/01591350 control=loader2.ctl[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat loader1.log[K4.log1.log[1P.log2.log
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:26:52 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loader2.ctl
+Data File:      employees.csv
+  Bad File:     employees.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table EMPLOYEES, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+FNAME                               FIRST     *   ,       CHARACTER            
+MNAME                                NEXT     *   ,       CHARACTER            
+LNAME                                NEXT     *   ,       CHARACTER            
+WORKID                               NEXT     *   ,       CHARACTER            
+PAY                                  NEXT     *   ,       CHARACTER            
+STORENUM                             NEXT     *   ,       CHARACTER            
+POSITION                             NEXT     *   ,       CHARACTER            
+
+Record 1: Rejected - Error on table EMPLOYEES, column FNAME.
+ORA-12899: value too large for column "ZDY262"."EMPLOYEES"."FNAME" (actual: 18, maximum: 15)
+
+Record 2: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 3: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 4: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 5: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 6: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 7: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 8: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 9: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 10: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 11: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 12: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 13: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 14: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 15: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 16: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 17: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 18: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 19: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 20: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 21: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 22: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 23: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 24: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+Record 25: Rejected - Error on table EMPLOYEES, column PAY.
+ORA-01722: invalid number
+
+
+Table EMPLOYEES:
+  0 Rows successfully loaded.
+  25 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 115584 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            25
+Total logical records rejected:        25
+Total logical records discarded:        0
+
+Run began on Wed Apr 17 18:26:52 2019
+Run ended on Wed Apr 17 18:26:52 2019
+
+Elapsed time was:     00:00:00.14
+CPU time was:         00:00:00.03
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ cat loader2.logsqlldr userid=zdy262/01591350 control=loader2.ctl[1P.ctl3.ctl
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:27:44 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Conventional
+Commit point reached - logical record count 1
+
+Table STORE:
+  1 Row successfully loaded.
+
+Check the log file:
+  loader3.log
+for more information about the load.
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ sqlldr userid=zdy262/01591350 control=loader3.ctl[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat loader2.log[K[1P.log3.log
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:27:44 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loader3.ctl
+Data File:      store.csv
+  Bad File:     store.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table STORE, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+HOURS                               FIRST     *   ,       CHARACTER            
+STREET                               NEXT     *   ,       CHARACTER            
+CITY                                 NEXT     *   ,       CHARACTER            
+SSTATE                               NEXT     *   ,       CHARACTER            
+ZIP                                  NEXT     *   ,       CHARACTER            
+STORENUM                             NEXT     *   ,       CHARACTER            
+
+
+Table STORE:
+  1 Row successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  99072 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             1
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Wed Apr 17 18:27:44 2019
+Run ended on Wed Apr 17 18:27:44 2019
+
+Elapsed time was:     00:00:00.14
+CPU time was:         00:00:00.03
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ cat loader3.logsqlldr userid=zdy262/01591350 control=loader3.ctl[1P.ctl5.ctl
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:28:02 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Conventional
+Commit point reached - logical record count 4
+Commit point reached - logical record count 5
+
+Table SCHEDULE:
+  0 Rows successfully loaded.
+
+Check the log file:
+  loader5.log
+for more information about the load.
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ sqlldr userid=zdy262/01591350 control=loader5.ctl[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat loader3.log[K[1P.log5.log
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:28:02 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loader5.ctl
+Data File:      schedule.csv
+  Bad File:     schedule.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table SCHEDULE, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+EMPID                               FIRST     *   ,       CHARACTER            
+SCHEDID                              NEXT     *   ,       CHARACTER            
+SDAY                                 NEXT     *   ,       CHARACTER            
+STARTTIME                            NEXT     *   ,       CHARACTER            
+ENDTIME                              NEXT     *   ,       CHARACTER            
+
+Record 1: Rejected - Error on table SCHEDULE, column SCHEDID.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 2: Rejected - Error on table SCHEDULE, column SCHEDID.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 3: Rejected - Error on table SCHEDULE, column SCHEDID.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 4: Rejected - Error on table SCHEDULE, column SCHEDID.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+Record 5: Rejected - Error on table SCHEDULE, column SCHEDID.
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+
+Table SCHEDULE:
+  0 Rows successfully loaded.
+  5 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  82560 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             5
+Total logical records rejected:         5
+Total logical records discarded:        0
+
+Run began on Wed Apr 17 18:28:02 2019
+Run ended on Wed Apr 17 18:28:02 2019
+
+Elapsed time was:     00:00:00.12
+CPU time was:         00:00:00.03
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ vi sch[K[K[Kschedule.csv
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"schedule.csv" [noeol][dos] 5L, 225C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H1,"5/6/2019","Monday","09:00 AM","8:00 PM"
+1,"5/7/2019","Tuesday","09:00 AM","8:00 PM"
+1,"5/8/2019","Wednesday","09:00 AM","8:00 PM"
+1,"5/9/2019","Thursday","09:00 AM","8:00 PM"
+1,"5/10/2019","Friday","09:00 AM","8:00 PM"
+[1m[34m~                                                                                                              [7;1H~                                                                                                              [8;1H~                                                                                                              [9;1H~                                                                                                              [10;1H~                                                                                                              [11;1H~                                                                                                              [12;1H~                                                                                                              [13;1H~                                                                                                              [14;1H~                                                                                                              [15;1H~                                                                                                              [16;1H~                                                                                                              [17;1H~                                                                                                              [18;1H~                                                                                                              [19;1H~                                                                                                              [20;1H~                                                                                                              [21;1H~                                                                                                              [22;1H~                                                                                                              [23;1H~                                                                                                              [m[24;94H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[24;84H^[[1;1H[24;84H  [1;1H[24;84H^[[1;1H[24;84H  [1;1H[?25h[?25l[24;84H:[1;1H[24;1H[K[24;1H:[?2004h[?25hq[?25l[?25h[?25l[?2004l[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0t]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ cd ../q
+]0;zdy262@databaselab: ~/tocopy/qzdy262@databaselab:~/tocopy/q$ vi creator.sql
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"creator.sql" [dos] 85L, 1419C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1HworkId int [33mnot[m [35mnull[m,
+storeNum int,
+PRIMARY KEY (workId)
+);
+
+[33mcreate[m [35mtable[m customers
+(
+representative int, [34m--employee's work id[m
+phoneNum [32mvarchar[m([31m25[m) [33mnot[m [35mnull[m,
+email [32mvarchar[m([31m30[m),
+street [32mvarchar[m([31m30[m),
+sState [32mvarchar[m([31m15[m),
+[34m--name[m
+fname [32mvarchar[m([31m15[m) [33mnot[m [35mnull[m,
+mname [32mvarchar[m([31m15[m),
+lname [32mvarchar[m([31m15[m) [33mnot[m [35mnull[m,
+primary key (phoneNum)
+);
+
+[33mcreate[m [35mtable[m schedule
+(
+empId int [33mnot[m [35mnull[m,
+schedId [32mdate[m [33mnot[m [35mnull[m,[24;94H60,17[9C77%[12;17H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[24;84H~@k[12;17H[24;84H   [13;6H[24;95H1,6 [13;6H[?25h[?25l[24;84H~@k[13;6H[24;84H   [14;17H[46m([2C)[m[24;95H2,17[14;17H[?25h[?25l[24;84H~@k[14;17H[24;84H   [15;17H[14;14H([2C)[15;14H[46m([2C)[m[24;95H3[15;17H[?25h[?25l[24;84H~@k[15;17H[24;84H   [16;17H[15;14H([2C)[16;14H[46m([2C)[m[24;95H4[16;17H[?25h[?25l[24;84H~@k[16;17H[24;84H   [17;17H[16;14H([2C)[24;95H5[17;17H[?25h[?25l[24;84H~@k[17;17H[24;84H   [18;2H[24;95H6,2 [18;2H[?25h[?25l[24;84H~@k[18;2H[24;84H   [18;1H[1;23r[23;1H
+[1;24r[23;1HsDay [32mvarchar[m([31m10[m),[24;1H[K[24;94H67,0-1[8C79%[18;1H[?25h[?25l[24;84H~@k[18;1H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[23;1HstartTime [32mvarchar[m([31m4[m),[24;94H[K[24;94H68,17[9C80%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;1H[1;23r[23;1H
+[1;24r[23;1HendTime [32mvarchar[m([31m4[m),[24;94H[K[24;94H69,1[10C82%[18;1H[?25h[?25l[24;84H~@k[18;1H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[23;1HPRIMARY KEY (empId, schedId)[24;94H[K[24;94H70,17[9C83%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[23;1H);[24;94H[K[24;94H71,17[9C85%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[24;94H[K[24;94H72,17[9C87%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [17;17H[24;95H1[17;17H[?25h[?25l[24;84H~@k[17;17H[24;84H   [16;17H[24;95H0[16;17H[?25h[?25l[24;84H~@k[16;17H[24;84H   [17;17H[24;95H1[17;17H[?25h[?25l[24;84H~@k[17;17H[24;84H   [18;17H[24;95H2[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[23;1H[33mcreate[m [35mtable[m manages[24;94H[K[24;94H73,17[9C88%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[23;1H([24;94H[K[24;94H74,17[9C90%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[23;1HmanagerId int [33mnot[m [35mnull[m,[24;94H[K[24;94H75,17[9C91%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;2H[1;23r[23;1H
+[1;24r[23;1HemployeeId int [33mnot[m [35mnull[m,[24;94H[K[24;94H76,2[10C93%[18;2H[?25h[?25l[24;84H~@k[18;2H[24;84H   [18;1H[1;23r[23;1H
+[1;24r[23;1HPRIMARY KEY (managerId,employeeId)[24;94H[K[24;94H77,0-1[8C95%[18;1H[?25h[?25l[24;84H~@k[18;1H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[23;1H);[24;94H[K[24;94H78,17[9C96%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;1H[1;23r[23;1H
+[1;24r[18;1H[46m([22;1H)[m[24;94H[K[24;94H79,1[10C98%[18;1H[?25h[?25l[24;84H~@k[18;1H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[17;1H([21;1H)[24;94H[K[24;94H80,17[9CBot[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [19;17H[24;95H1[19;17H[?25h[?25l[24;84H~@k[19;17H[24;84H   [20;17H[24;95H2[20;17H[?25h[?25l[24;84H~@k[20;17H[24;84H   [19;17H[24;95H1[19;17H[?25h[?25l[24;84H~@k[19;17H[24;84H   [18;17H[24;95H0[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [17;1H[46m([21;1H)[m[24;94H79,1 [17;1H[?25h[?25l[24;84H~@k[17;1H[24;84H   [16;17H
+([21;1H)[24;95H8,17[16;17H[?25h[?25l[24;84H~@k[16;17H[24;84H   [15;1H[24;95H7,0-1[15;1H[?25h[?25l[24;84H~@k[15;1H[24;84H   [14;2H[24;95H6,2  [14;2H[?25h[?25l[24;84H~@k[14;2H[24;84H   [13;17H[24;95H5,17[13;17H[?25h[?25l[24;84H~@k[13;17H[24;84H   [12;17H[24;95H4[12;17H[?25h[?25l[24;84H~@k[12;17H[24;84H   [11;17H[24;95H3[11;17H[?25h[?25l[24;84H~@k[11;17H[24;84H   [10;17H[24;95H2[10;17H[?25h[?25l[24;84H~@k[10;17H[24;84H   [9;17H[24;95H1[9;17H[?25h[?25l[24;84H~@k[9;17H[24;84H   [8;17H[24;95H0[8;17H[?25h[?25l[24;84H~@k[8;17H[24;84H   [7;1H[46m([14;1H)[m[24;94H69,1 [7;1H[?25h[?25l[24;84H~@k[7;1H[24;84H   [6;17H
+([14;1H)[24;95H8,17[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;1H[1;23r[1;1H[L[1;24r[1;1Hfname [32mvarchar[m([31m15[m) [33mnot[m [35mnull[m,[24;94H[K[24;94H67,0-1[8C98%[6;1H[?25h[?25l[24;84H~@k[6;1H[24;84H   [6;2H[1;23r[1;1H[L[1;24r[1;1H[34m--name[m[24;94H[K[24;94H66,2[10C96%[6;2H[?25h[?25l[24;84H~@k[6;2H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1HsState [32mvarchar[m([31m15[m),[24;94H[K[24;94H65,17[9C95%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1Hstreet [32mvarchar[m([31m30[m),[6;14H[46m([2C)[m[24;94H[K[24;94H64,17[9C93%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1Hemail [32mvarchar[m([31m30[m),[6;14H[46m([2C)[m[7;14H([2C)[24;94H[K[24;94H63,17[9C91%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1HphoneNum [32mvarchar[m([31m25[m) [33mnot[m [35mnull[m,[6;14H[46m([2C)[m[7;14H([2C)[24;94H[K[24;94H62,17[9C90%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;6H[1;23r[1;1H[L[1;24r[1;1Hrepresentative int, [34m--employee's work id[m[7;14H([2C)[24;94H[K[24;94H61,6[10C88%[6;6H[?25h[?25l[24;84H~@k[6;6H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1H([24;94H[K[24;94H60,17[9C87%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1H[33mcreate[m [35mtable[m customers[24;94H[K[24;94H59,17[9C85%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[6;14H[46m([2C)[m[24;94H[K[24;94H58,17[9C83%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1H);[6;17H[46m([2C)[m[7;14H([2C)[24;94H[K[24;94H57,17[9C82%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1HPRIMARY KEY (workId)[7;17H([2C)[24;94H[K[24;94H56,17[9C80%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;1H[1;23r[1;1H[L[1;24r[1;1HstoreNum int,[6;1H[46m([17;1H)[m[24;94H[K[24;94H55,1[10C79%[6;1H[?25h[?25l[24;84H~@k[6;1H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1HworkId int [33mnot[m [35mnull[m,[7;1H([18;1H)[24;94H[K[24;94H54,17[9C77%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;1H[1;23r[1;1H[L[1;24r[1;1Hposition [32mvarchar[m([31m20[m),[24;94H[K[24;94H53,0-1[8C75%[6;1H[?25h[?25l[24;84H~@k[6;1H[24;84H   [6;2H[1;23r[1;1H[L[1;24r[1;1Hpay [35mdecimal[m([31m4[m,[31m2[m),[24;94H[K[24;94H52,2[10C74%[6;2H[?25h[?25l[24;84H~@k[6;2H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1H[34m--etc[m[24;94H[K[24;94H51,17[9C72%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;13H[1;23r[1;1H[L[1;24r[1;1Hlname [32mvarchar[m([31m20[m) [33mnot[m [35mnull[m,[24;94H[K[24;94H50,13[9C70%[6;13H[?25h[?25l[24;84H~@k[6;13H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1Hmname [32mvarchar[m([31m15[m),[24;94H[K[24;94H49,17[9C69%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1Hfname [32mvarchar[m([31m15[m) [33mnot[m [35mnull[m,[6;17H[46m([2C)[m[24;94H[K[24;94H48,17[9C67%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1H[34m--name[m[7;17H([2C)[24;94H[K[24;94H47,17[9C66%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;5H[1;23r[1;1H[L[1;24r[1;1H([24;94H[K[24;94H46,5[10C64%[6;5H[?25h[?25l[24;84H~@k[6;5H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1H[33mcreate[m [35mtable[m employees[6;14H[46m([2C)[m[24;94H[K[24;94H45,17[9C62%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[6;14H[46m([2C)[m[7;14H([2C)[24;94H[K[24;94H44,17[9C61%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1H);[6;14H[46m([2C)[m[7;14H([2C)[24;94H[K[24;94H43,17[9C59%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;6H[1;23r[1;1H[L[1;24r[1;1HPRIMARY KEY (storeNum)[7;14H([2C)[24;94H[K[24;94H42,6[10C58%[6;6H[?25h[?25l[24;84H~@k[6;6H[24;84H   [6;1H[1;23r[1;1H[L[1;24r[1;1HstoreNum int [33mnot[m [35mnull[m,[6;1H[46m([17;1H)[m[24;94H[K[24;94H41,1[10C56%[6;1H[?25h[?25l[24;84H~@k[6;1H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1Hzip int,[7;1H([18;1H)[24;94H[K[24;94H40,17[9C54%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;1H[1;23r[1;1H[L[1;24r[1;1HsState [32mvarchar[m([31m13[m),[24;94H[K[24;94H39,0-1[8C53%[6;1H[?25h[?25l[24;84H~@k[6;1H[24;84H   [6;2H[1;23r[1;1H[L[1;24r[1;1Hcity [32mvarchar[m([31m30[m),[24;94H[K[24;94H38,2[10C51%[6;2H[?25h[?25l[24;84H~@k[6;2H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1Hstreet [32mvarchar[m([31m30[m),[24;94H[K[24;94H37,17[9C50%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1Hhours [32mvarchar[m([31m20[m),[24;94H[K[24;94H36,17[9C48%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;8H[1;23r[1;1H[L[1;24r[1;1H([24;94H[K[24;94H35,8[10C46%[6;8H[?25h[?25l[24;84H~@k[6;8H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1H[33mcreate[m [35mtable[m store[24;94H[K[24;94H34,17[9C45%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[24;94H[K[24;94H33,17[9C43%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1H);[24;94H[K[24;94H32,17[9C41%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1HPRIMARY KEY (VIN)[6;14H[46m([2C)[m[24;94H[K[24;94H31,17[9C40%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;1H[1;23r[1;1H[L[1;24r[1;1HstoreNum int,[6;1H[46m([m[7;14H([2C)[14;1H[46m)[m[24;94H[K[24;94H30,1[10C38%[6;1H[?25h[?25l[24;84H~@k[6;1H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1H[34m--store[m[7;1H([15;1H)[24;94H[K[24;94H29,17[9C37%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;1H[1;23r[1;1H[L[1;24r[1;1HsLength [35mdecimal[m([31m4[m,[31m1[m),[24;94H[K[24;94H28,0-1[8C35%[6;1H[?25h[?25l[24;84H~@k[6;1H[24;84H   [6;2H[1;23r[1;1H[L[1;24r[1;1Hweight int,[24;94H[K[24;94H27,2[10C33%[6;2H[?25h[?25l[24;84H~@k[6;2H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1H[34m--size[m[6;13H[46m([mVIN[46m)[m[24;94H[K[24;94H26,17[9C32%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;13H[1;23r[1;1H[L[1;24r[1;1Hcylinders [32mvarchar[m([31m10[m),[7;13H(VIN)[24;94H[K[24;94H25,13[9C30%[6;13H[?25h[?25l[24;84H~@k[6;13H[24;84H   [6;7H[1;23r[1;1H[L[1;24r[1;1Htorque int,[24;94H[K[24;94H24,7[10C29%[6;7H[?25h[?25l[24;84H~@k[6;7H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1HpowerOutput int,[24;94H[K[24;94H23,17[9C27%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;11H[1;23r[1;1H[L[1;24r[1;1HnumGears int,[24;94H[K[24;94H22,11[9C25%[6;11H[?25h[?25l[24;84H~@k[6;11H[24;84H   [6;6H[1;23r[1;1H[L[1;24r[1;1Htransmission [32mchar[m,[24;94H[K[24;94H21,6[10C24%[6;6H[?25h[?25l[24;84H~@k[6;6H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1H[34m--Specs[m[24;94H[K[24;94H20,17[9C22%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;11H[1;23r[1;1H[L[1;24r[1;1HmpgCity [35mdecimal[m([31m3[m,[31m1[m),[24;94H[K[24;94H19,11[9C20%[6;11H[?25h[?25l[24;84H~@k[6;11H[24;84H   [6;16H[1;23r[1;1H[L[1;24r[1;1HmpgHi [35mdecimal[m([31m3[m,[31m1[m),[24;94H[K[24;94H18,16[9C19%[6;16H[?25h[?25l[24;84H~@k[6;16H[24;84H   [6;13H[1;23r[1;1H[L[1;24r[1;1HtopSpeed int,[24;94H[K[24;94H17,13[9C17%[6;13H[?25h[?25l[24;84H~@k[6;13H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1Hacceleration [35mdecimal[m([31m3[m,[31m1[m),[24;94H[K[24;94H16,17[9C16%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;7H[1;23r[1;1H[L[1;24r[1;1H[34m--Performance[m[24;94H[K[24;94H15,7[10C14%[6;7H[?25h[?25l[24;84H~@k[6;7H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1Hdoors int [33mnot[m [35mnull[m,[24;94H[K[24;94H14,17[9C12%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1HsecondColor [32mvarchar[m([31m9[m),[24;94H[K[24;94H13,17[9C11%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;13H[1;23r[1;1H[L[1;24r[1;1HprimColor [32mvarchar[m([31m9[m),[24;94H[K[24;94H12,13[10C9%[6;13H[?25h[?25l[24;84H~@k[6;13H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1Hmodel [32mvarchar[m([31m15[m),[24;94H[K[24;94H11,17[10C8%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;13H[1;23r[1;1H[L[1;24r[1;1Hmake [32mvarchar[m([31m15[m),[24;94H[K[24;94H10,13[10C6%[6;13H[?25h[?25l[24;84H~@k[6;13H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1HsYear int,[24;94H[K[24;94H9,17[11C4%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1HVIN int [33mnot[m [35mnull[m,[24;94H[K[24;94H8,17[11C3%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1H([24;94H[K[24;94H7,17[11C1%[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [6;17H[1;23r[1;1H[L[1;24r[1;1H[33mcreate[m [35mtable[m cars[6;14H[46m([2C)[m[24;94H[K[24;94H6,17[10CTop[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [5;17H[6;14H([2C)[24;94H5[5;17H[?25h[?25l[24;84H~@k[5;17H[24;84H   [4;10H[24;94H4,10[4;10H[?25h[?25l[24;84H~@k[4;10H[24;84H   [3;17H[24;94H3,17[3;17H[?25h[?25l[24;84H~@k[3;17H[24;84H   [4;10H[24;94H4,10[4;10H[?25h[?25l[24;84H~@k[4;10H[24;84H   [5;17H[24;94H5,17[5;17H[?25h[?25l[24;84H~@k[5;17H[24;84H   [6;17H[46m([2C)[m[24;94H6[6;17H[?25h[?25l[24;84H~@k[6;17H[24;84H   [7;17H[6;14H([2C)[24;94H7[7;17H[?25h[?25l[24;84H~@k[7;17H[24;84H   [8;17H[24;94H8[8;17H[?25h[?25l[24;84H~@k[8;17H[24;84H   [9;17H[24;94H9[9;17H[?25h[?25l[24;84H~@k[9;17H[24;84H   [10;13H[24;94H10,13[10;13H[?25h[?25l[24;84H~@k[10;13H[24;84H   [11;17H[24;95H1,17[11;17H[?25h[?25l[24;84H~@k[11;17H[24;84H   [12;13H[24;95H2,13[12;13H[?25h[?25l[24;84H~@k[12;13H[24;84H   [13;17H[24;95H3,17[13;17H[?25h[?25l[24;84H~@k[13;17H[24;84H   [14;17H[24;95H4[14;17H[?25h[?25l[24;84H~@k[14;17H[24;84H   [15;7H[24;95H5,7 [15;7H[?25h[?25l[24;84H~@k[15;7H[24;84H   [16;17H[24;95H6,17[16;17H[?25h[?25l[24;84H~@k[16;17H[24;84H   [17;13H[24;95H7,13[17;13H[?25h[?25l[24;84H~@k[17;13H[24;84H   [18;16H[24;95H8,16[18;16H[?25h[?25l[24;84H~@k[18;16H[24;84H   [18;11H[1;23r[23;1H
+[1;24r[23;1H[34m--store[m[24;94H[K[24;94H19,11[10C1%[18;11H[?25h[?25l[24;84H~@k[18;11H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[23;1HstoreNum int,[24;94H[K[24;94H20,17[10C3%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;6H[1;23r[23;1H
+[1;24r[23;1HPRIMARY KEY (VIN)[24;94H[K[24;94H21,6[11C4%[18;6H[?25h[?25l[24;84H~@k[18;6H[24;84H   [18;11H[1;23r[23;1H
+[1;24r[23;1H);[24;94H[K[24;94H22,11[10C6%[18;11H[?25h[?25l[24;84H~@k[18;11H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[24;94H[K[24;94H23,17[10C8%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;7H[1;23r[23;1H
+[1;24r[23;1H[33mcreate[m [35mtable[m store[24;94H[K[24;94H24,7[11C9%[18;7H[?25h[?25l[24;84H~@k[18;7H[24;84H   [18;13H[1;23r[23;1H
+[1;24r[23;1H([24;94H[K[24;94H25,13[9C11%[18;13H[?25h[?25l[24;84H~@k[18;13H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[18;13H[46m([mVIN[46m)[m[23;1Hhours [32mvarchar[m([31m20[m),[24;94H[K[24;94H26,17[9C12%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;2H[1;23r[23;1H
+[1;24r[17;13H(VIN)[23;1Hstreet [32mvarchar[m([31m30[m),[24;94H[K[24;94H27,2[10C14%[18;2H[?25h[?25l[24;84H~@k[18;2H[24;84H   [18;1H[1;23r[23;1H
+[1;24r[23;1Hcity [32mvarchar[m([31m30[m),[24;94H[K[24;94H28,0-1[8C16%[18;1H[?25h[?25l[24;84H~@k[18;1H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[23;1HsState [32mvarchar[m([31m13[m),[24;94H[K[24;94H29,17[9C17%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;1H[1;23r[23;1H
+[1;24r[23;1Hzip int,[24;94H[K[24;94H30,1[10C19%[18;1H[?25h[?25l[24;84H~@k[18;1H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[18;14H[46m([2C)[m[23;1HstoreNum int [33mnot[m [35mnull[m,[24;94H[K[24;94H31,17[9C20%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[17;14H([2C)[23;1HPRIMARY KEY (storeNum)[24;94H[K[24;94H32,17[9C22%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[23;1H);[24;94H[K[24;94H33,17[9C24%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[24;94H[K[24;94H34,17[9C25%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;8H[1;23r[23;1H
+[1;24r[23;1H[33mcreate[m [35mtable[m employees[24;94H[K[24;94H35,8[10C27%[18;8H[?25h[?25l[24;84H~@k[18;8H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[23;1H([24;94H[K[24;94H36,17[9C29%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[23;1H[34m--name[m[24;94H[K[24;94H37,17[9C30%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;2H[1;23r[23;1H
+[1;24r[23;1Hfname [32mvarchar[m([31m15[m) [33mnot[m [35mnull[m,[24;94H[K[24;94H38,2[10C32%[18;2H[?25h[?25l[24;84H~@k[18;2H[24;84H   [18;1H[1;23r[23;1H
+[1;24r[23;1Hmname [32mvarchar[m([31m15[m),[24;94H[K[24;94H39,0-1[8C33%[18;1H[?25h[?25l[24;84H~@k[18;1H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[23;1Hlname [32mvarchar[m([31m20[m) [33mnot[m [35mnull[m,[24;94H[K[24;94H40,17[9C35%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;1H[1;23r[23;1H
+[1;24r[23;1H[34m--etc[m[24;94H[K[24;94H41,1[10C37%[18;1H[?25h[?25l[24;84H~@k[18;1H[24;84H   [18;6H[1;23r[23;1H
+[1;24r[23;1Hpay [35mdecimal[m([31m4[m,[31m2[m),[24;94H[K[24;94H42,6[10C38%[18;6H[?25h[?25l[24;84H~@k[18;6H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[18;14H[46m([2C)[m[23;1Hposition [32mvarchar[m([31m20[m),[24;94H[K[24;94H43,17[9C40%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[17;14H([2C)[18;14H[46m([2C)[m[23;1HworkId int [33mnot[m [35mnull[m,[24;94H[K[24;94H44,17[9C41%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[17;14H([2C)[18;14H[46m([2C)[m[23;1HstoreNum int,[24;94H[K[24;94H45,17[9C43%[18;17H[?25h[?25l[1;23r[23;1H
+[1;24r[17;14H([2C)[23;1HPRIMARY KEY (workId)[24;94H[K[24;94H46,5[10C45%[18;5H[?25h[?25l[24;84H~@k[18;5H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[23;1H);[24;94H[K[24;94H47,17[9C46%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[18;17H[46m([2C)[m[24;94H[K[24;94H48,17[9C48%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[17;17H([2C)[23;1H[33mcreate[m [35mtable[m customers[24;94H[K[24;94H49,17[9C50%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;13H[1;23r[23;1H
+[1;24r[23;1H([24;94H[K[24;94H50,13[9C51%[18;13H[?25h[?25l[24;84H~@k[18;13H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[23;1Hrepresentative int, [34m--employee's work id[m[24;94H[K[24;94H51,17[9C53%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;2H[1;23r[23;1H
+[1;24r[23;1HphoneNum [32mvarchar[m([31m25[m) [33mnot[m [35mnull[m,[24;94H[K[24;94H52,2[10C54%[18;2H[?25h[?25l[24;84H~@k[18;2H[24;84H   [18;1H[1;23r[23;1H
+[1;24r[23;1Hemail [32mvarchar[m([31m30[m),[24;94H[K[24;94H53,0-1[8C56%[18;1H[?25h[?25l[24;84H~@k[18;1H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[23;1Hstreet [32mvarchar[m([31m30[m),[24;94H[K[24;94H54,17[9C58%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;1H[1;23r[23;1H
+[1;24r[23;1HsState [32mvarchar[m([31m15[m),[24;94H[K[24;94H55,1[10C59%[18;1H[?25h[?25l[24;84H~@k[18;1H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[23;1H[34m--name[m[24;94H[K[24;94H56,17[9C61%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[18;17H[46m([2C)[m[23;1Hfname [32mvarchar[m([31m15[m) [33mnot[m [35mnull[m,[24;94H[K[24;94H57,17[9C62%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[17;17H([2C)[18;14H[46m([2C)[m[23;1Hmname [32mvarchar[m([31m15[m),[24;94H[K[24;94H58,17[9C64%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[17;14H([2C)[23;1Hlname [32mvarchar[m([31m15[m) [33mnot[m [35mnull[m,[24;94H[K[24;94H59,17[9C66%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[23;1Hprimary key (phoneNum)[24;94H[K[24;94H60,17[9C67%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;6H[1;23r[23;1H
+[1;24r[23;1H);[24;94H[K[24;94H61,6[10C69%[18;6H[?25h[?25l[24;84H~@k[18;6H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[18;14H[46m([2C)[m[24;94H[K[24;94H62,17[9C70%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [18;17H[1;23r[23;1H
+[1;24r[17;14H([2C)[18;14H[46m([2C)[m[23;1H[33mcreate[m [35mtable[m schedule[24;94H[K[24;94H63,17[9C72%[18;17H[?25h[?25l[24;84H~@k[18;17H[24;84H   [17;17H[46m([2C)[m[18;14H([2C)[24;95H2[17;17H[?25h[?25l[24;84H~@k[17;17H[24;84H   [16;6H[17;14H([2C)[24;95H1,6 [16;6H[?25h[?25l[24;84H~@k[16;6H[24;84H   [15;17H[24;95H0,17[15;17H[?25h[?25l[24;84H~@k[15;17H[24;84H   [14;17H[24;94H59[14;17H[?25h[?25l[24;84H~@k[14;17H[24;84H   [13;17H[46m([2C)[m[24;95H8[13;17H[?25h[?25l[24;84Hi[13;17H[24;84H [13;17H[24;1H[1m-- INSERT --[m[24;94H[K[24;94H58,17[9C72%[13;17H[?25h[?25l)[46m,[m[13;18H[K[13;16H[46m)[m,[24;98H6[13;16H[?25h[?25l[31m[46m5[m),[31m5[m[46m)[m[24;98H7[13;17H[?25h[24;1H[K[13;16H[?25l[24;84H^[[13;16H[24;84H  [13;17H([2C)[24;94H58,16[9C72%[13;16H[?25h[?25l[24;84H:[13;16H[24;84H[K[24;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[?2004l"creator.sql" [dos] 85L, 1419C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;zdy262@databaselab: ~/tocopy/qzdy262@databaselab:~/tocopy/q$ vi creator.sql[7Pcd ../qvi schedule.csvcat loader5.log[1P.log7.log[1P.log6.log
+cat: loader6.log: No such file or directory
+]0;zdy262@databaselab: ~/tocopy/qzdy262@databaselab:~/tocopy/q$ cat loader6.log
+cat: loader6.log: No such file or directory
+]0;zdy262@databaselab: ~/tocopy/qzdy262@databaselab:~/tocopy/q$ cat loader6.log[1P.log7.log
+cat: loader7.log: No such file or directory
+]0;zdy262@databaselab: ~/tocopy/qzdy262@databaselab:~/tocopy/q$ cat loader7.log6.log[1Pvi creator.sql[7Pcd ../qvi schedule.csvcat loader5.logsqlldr userid=zdy262/01591350 control=loader5.ctl[1P.ctl7.ctl
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:30:03 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+SQL*Loader-500: Unable to open file (loader7.ctl)
+SQL*Loader-553: file not found
+SQL*Loader-509: System error: No such file or directory
+]0;zdy262@databaselab: ~/tocopy/qzdy262@databaselab:~/tocopy/q$ sqlldr userid=zdy262/01591350 control=loader7.ctl[C[1P.ctl5.ctl
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:30:15 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+SQL*Loader-500: Unable to open file (loader5.ctl)
+SQL*Loader-553: file not found
+SQL*Loader-509: System error: No such file or directory
+]0;zdy262@databaselab: ~/tocopy/qzdy262@databaselab:~/tocopy/q$ sqlldr userid=zdy262/01591350 control=loader5.ctl7.ctl[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat loader7.log[K6.log[1Pvi creator.sqlcat loader6.log[1P.log5.log
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:30:15 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+SQL*Loader-500: Unable to open file (loader5.ctl)
+SQL*Loader-553: file not found
+SQL*Loader-509: System error: No such file or directory
+]0;zdy262@databaselab: ~/tocopy/qzdy262@databaselab:~/tocopy/q$ cat loader5.logsqlldr userid=zdy262/01591350 control=loader5.ctl[C[C[C
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:30:33 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+SQL*Loader-500: Unable to open file (loader5.ctl)
+SQL*Loader-553: file not found
+SQL*Loader-509: System error: No such file or directory
+]0;zdy262@databaselab: ~/tocopy/qzdy262@databaselab:~/tocopy/q$ cd ../d
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ cd ../dsqlldr userid=zdy262/01591350 control=loader5.ctl[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat loader5.log[Ksqlldr userid=zdy262/01591350 control=loader5.ctl[1P.ctl7.ctl
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:30:46 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+SQL*Loader-500: Unable to open file (loader7.ctl)
+SQL*Loader-553: file not found
+SQL*Loader-509: System error: No such file or directory
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ sqlldr userid=zdy262/01591350 control=loader7.ctl[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+cars.bad       employees.bad  loader2.ctl  loader4.ctl  loader6.ctl  log1          schedule.csv
+cars.csv       employees.csv  loader2.log  loader4.log  loader6.log  manages.bad   store.csv
+customers.bad  loader1.ctl    loader3.ctl  loader5.ctl  loader7.log  manages.csv
+customers.csv  loader1.log    loader3.log  loader5.log  loader.log   schedule.bad
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ lssqlldr userid=zdy262/01591350 control=loader7.ctl[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[K[Kcat loader7.log
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:30:46 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+SQL*Loader-500: Unable to open file (loader7.ctl)
+SQL*Loader-553: file not found
+SQL*Loader-509: System error: No such file or directory
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ cat loader7.logls[Ksqlldr userid=zdy262/01591350 control=loader7.ctl[1P.ctl6.ctl
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:32:27 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Conventional
+Commit point reached - logical record count 25
+
+Table MANAGES:
+  0 Rows successfully loaded.
+
+Check the log file:
+  loader6.log
+for more information about the load.
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ sqlldr userid=zdy262/01591350 control=loader6.ctl[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat loader7.log[K[1P.log6.log
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:32:27 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loader6.ctl
+Data File:      manages.csv
+  Bad File:     manages.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table MANAGES, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+EMPLOYEEID                          FIRST     *   ,       CHARACTER            
+MANAGERID                            NEXT     *   ,       CHARACTER            
+
+Record 1: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 2: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 3: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 4: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 5: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 6: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 7: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 8: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 9: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 10: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 11: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 12: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 13: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 14: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 15: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 16: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 17: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 18: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 19: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 20: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 21: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 22: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 23: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+Record 24: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01
