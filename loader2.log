@@ -1,0 +1,85 @@
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 04:39:50 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loader2.ctl
+Data File:      employees.csv
+  Bad File:     employees.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table EMPLOYEES, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+FNAME                               FIRST     *   ,       CHARACTER            
+MNAME                                NEXT     *   ,       CHARACTER            
+LNAME                                NEXT     *   ,       CHARACTER            
+WORKID                               NEXT     *   ,       CHARACTER            
+PAY                                  NEXT     *   ,       CHARACTER            
+STORENUM                             NEXT     *   ,       CHARACTER            
+POSITION                             NEXT     *   ,       CHARACTER            
+
+Record 1: Rejected - Error on table EMPLOYEES, column LNAME.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+Record 2: Rejected - Error on table EMPLOYEES, column MNAME.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+Record 3: Rejected - Error on table EMPLOYEES, column STORENUM.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+Record 4: Rejected - Error on table EMPLOYEES, column FNAME.
+Field in data file exceeds maximum length
+Record 5: Rejected - Error on table EMPLOYEES, column MNAME.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+Record 6: Rejected - Error on table EMPLOYEES, column MNAME.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+Record 7: Rejected - Error on table EMPLOYEES, column MNAME.
+Field in data file exceeds maximum length
+Record 8: Rejected - Error on table EMPLOYEES, column LNAME.
+Field in data file exceeds maximum length
+Record 9: Rejected - Error on table EMPLOYEES, column MNAME.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+Record 10: Rejected - Error on table EMPLOYEES, column WORKID.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+Record 11: Rejected - Error on table EMPLOYEES, column LNAME.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+Record 12: Rejected - Error on table EMPLOYEES, column MNAME.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+Record 13: Rejected - Error on table EMPLOYEES, column MNAME.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+Record 14: Rejected - Error on table EMPLOYEES, column LNAME.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+Record 15: Rejected - Error on table EMPLOYEES, column PAY.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+Record 16: Rejected - Error on table EMPLOYEES, column MNAME.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+
+Table EMPLOYEES:
+  0 Rows successfully loaded.
+  16 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 115584 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            16
+Total logical records rejected:        16
+Total logical records discarded:        0
+
+Run began on Wed Apr 17 04:39:50 2019
+Run ended on Wed Apr 17 04:39:50 2019
+
+Elapsed time was:     00:00:00.12
+CPU time was:         00:00:00.03

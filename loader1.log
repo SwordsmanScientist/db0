@@ -1,0 +1,82 @@
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 15:47:52 2019
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loader1.ctl
+Data File:      cars.csv
+  Bad File:     cars.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table CARS, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+VIN                                 FIRST     *   ,       CHARACTER            
+SYEAR                                NEXT     *   ,       CHARACTER            
+MAKE                                 NEXT     *   ,       CHARACTER            
+MODEL                                NEXT     *   ,       CHARACTER            
+PRIMCOLOR                            NEXT     *   ,       CHARACTER            
+SECONDCOLOR                          NEXT     *   ,       CHARACTER            
+DOORS                                NEXT     *   ,       CHARACTER            
+ACCELERATION                         NEXT     *   ,       CHARACTER            
+TOPSPEED                             NEXT     *   ,       CHARACTER            
+MPGHI                                NEXT     *   ,       CHARACTER            
+MPGCITY                              NEXT     *   ,       CHARACTER            
+TRANSMISSION                         NEXT     *   ,       CHARACTER            
+NUMGEARS                             NEXT     *   ,       CHARACTER            
+POWEROUTPUT                          NEXT     *   ,       CHARACTER            
+TORQUE                               NEXT     *   ,       CHARACTER            
+CYLINDERS                            NEXT     *   ,       CHARACTER            
+WEIGHT                               NEXT     *   ,       CHARACTER            
+SLENGTH                              NEXT     *   ,       CHARACTER            
+STORENUM                             NEXT     *   ,       CHARACTER            
+
+value used for ROWS parameter changed from 64 to 52
+Record 1: Rejected - Error on table CARS, column SYEAR.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+Record 2: Rejected - Error on table CARS, column MODEL.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+Record 3: Rejected - Error on table CARS, column SYEAR.
+Field in data file exceeds maximum length
+Record 4: Rejected - Error on table CARS, column MODEL.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+Record 5: Rejected - Error on table CARS, column MAKE.
+Field in data file exceeds maximum length
+Record 6: Rejected - Error on table CARS, column PRIMCOLOR.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+Record 7: Rejected - Error on table CARS, column MAKE.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+Record 8: Rejected - Error on table CARS, column SECONDCOLOR.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+
+Table CARS:
+  0 Rows successfully loaded.
+  8 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 254904 bytes(52 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             8
+Total logical records rejected:         8
+Total logical records discarded:        0
+
+Run began on Wed Apr 17 15:47:52 2019
+Run ended on Wed Apr 17 15:47:52 2019
+
+Elapsed time was:     00:00:00.10
+CPU time was:         00:00:00.03

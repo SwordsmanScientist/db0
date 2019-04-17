@@ -1,0 +1,90 @@
+SQL> start queries1.sql
+where sState = store.sState
+               *
+ERROR at line 3:
+ORA-00904: "STORE"."SSTATE": invalid identifier 
+
+
+SP2-0042: unknown command "count *" - rest of line ignored.
+SP2-0734: unknown command beginning "from a.car..." - rest of line ignored.
+SP2-0734: unknown command beginning "where (sel..." - rest of line ignored.
+SP2-0734: unknown command beginning "from cars ..." - rest of line ignored.
+SP2-0044: For a list of known commands enter HELP
+and to leave enter EXIT.
+SP2-0734: unknown command beginning "where a.sY..." - rest of line ignored.
+SP2-0734: unknown command beginning "from cars ..." - rest of line ignored.
+SP2-0734: unknown command beginning "where prim..." - rest of line ignored.
+
+no rows selected
+
+
+no rows selected
+
+where poition != "salesman"
+                 *
+ERROR at line 6:
+ORA-00904: "salesman": invalid identifier 
+
+
+
+no rows selected
+
+
+no rows selected
+
+where primColor in ("blue","red","white")
+                                 *
+ERROR at line 3:
+ORA-00904: "white": invalid identifier 
+
+
+where make not in ("chevrolet","dodge")
+                               *
+ERROR at line 3:
+ORA-00904: "dodge": invalid identifier 
+
+
+having sYear > 2000
+       *
+ERROR at line 4:
+ORA-00979: not a GROUP BY expression 
+
+
+from cars
+*
+ERROR at line 2:
+ORA-00936: missing expression 
+
+
+SQL> start queries2.sql
+values (30, 1995, "Mitsubishi", "Eclipse", "green",100)
+                                           *
+ERROR at line 2:
+ORA-00984: column not allowed here 
+
+
+delete from employees where lname = "Cronin" and fname = "Erika"
+                                                         *
+ERROR at line 1:
+ORA-00904: "Erika": invalid identifier 
+
+
+delete from cars where make = "Toyota" and model = "Corolla"
+                                                   *
+ERROR at line 1:
+ORA-00904: "Corolla": invalid identifier 
+
+
+transmission = 'm', numGears = 5, cylinder = "L4", weight = 2855, length = 172
+                                                                  *
+ERROR at line 3:
+ORA-00904: "LENGTH": invalid identifier 
+
+
+where position = "salesman"
+                 *
+ERROR at line 3:
+ORA-00904: "salesman": invalid identifier 
+
+
+SQL> exit
