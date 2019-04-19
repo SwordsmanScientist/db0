@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:32:27 2019
+SQL*Loader: Release 12.2.0.1.0 - Production on Fri Apr 19 17:44:41 2019
 
 Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
 
@@ -25,85 +25,13 @@ Insert option in effect for this table: INSERT
 EMPLOYEEID                          FIRST     *   ,       CHARACTER            
 MANAGERID                            NEXT     *   ,       CHARACTER            
 
-Record 1: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 2: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 3: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 4: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 5: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 6: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 7: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 8: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 9: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 10: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 11: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 12: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 13: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 14: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 15: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 16: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 17: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 18: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 19: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 20: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 21: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 22: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 23: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 24: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01722: invalid number
-
-Record 25: Rejected - Error on table MANAGES, column MANAGERID.
+Record 1: Rejected - Error on table MANAGES, column EMPLOYEEID.
 ORA-01722: invalid number
 
 
 Table MANAGES:
-  0 Rows successfully loaded.
-  25 Rows not loaded due to data errors.
+  25 Rows successfully loaded.
+  1 Row not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
 
@@ -112,12 +40,12 @@ Space allocated for bind array:                  33024 bytes(64 rows)
 Read   buffer bytes: 1048576
 
 Total logical records skipped:          0
-Total logical records read:            25
-Total logical records rejected:        25
+Total logical records read:            26
+Total logical records rejected:         1
 Total logical records discarded:        0
 
-Run began on Wed Apr 17 18:32:27 2019
-Run ended on Wed Apr 17 18:32:27 2019
+Run began on Fri Apr 19 17:44:41 2019
+Run ended on Fri Apr 19 17:44:42 2019
 
-Elapsed time was:     00:00:00.14
-CPU time was:         00:00:00.04
+Elapsed time was:     00:00:00.18
+CPU time was:         00:00:00.03

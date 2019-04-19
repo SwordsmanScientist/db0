@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:24:21 2019
+SQL*Loader: Release 12.2.0.1.0 - Production on Fri Apr 19 17:44:32 2019
 
 Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
 
@@ -31,13 +31,10 @@ STREET                               NEXT     *   ,       CHARACTER
 FNAME                                NEXT     *   ,       CHARACTER            
 EMAIL                                NEXT     *   ,       CHARACTER            
 
-Record 34: Rejected - Error on table CUSTOMERS, column EMAIL.
-ORA-12899: value too large for column "ZDY262"."CUSTOMERS"."EMAIL" (actual: 33, maximum: 30)
-
 
 Table CUSTOMERS:
-  99 Rows successfully loaded.
-  1 Row not loaded due to data errors.
+  100 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
 
@@ -47,11 +44,11 @@ Read   buffer bytes: 1048576
 
 Total logical records skipped:          0
 Total logical records read:           100
-Total logical records rejected:         1
+Total logical records rejected:         0
 Total logical records discarded:        0
 
-Run began on Wed Apr 17 18:24:21 2019
-Run ended on Wed Apr 17 18:24:21 2019
+Run began on Fri Apr 19 17:44:32 2019
+Run ended on Fri Apr 19 17:44:32 2019
 
-Elapsed time was:     00:00:00.15
-CPU time was:         00:00:00.04
+Elapsed time was:     00:00:00.17
+CPU time was:         00:00:00.03

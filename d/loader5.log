@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:28:02 2019
+SQL*Loader: Release 12.2.0.1.0 - Production on Fri Apr 19 17:44:37 2019
 
 Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
 
@@ -28,25 +28,10 @@ SDAY                                 NEXT     *   ,       CHARACTER
 STARTTIME                            NEXT     *   ,       CHARACTER            
 ENDTIME                              NEXT     *   ,       CHARACTER            
 
-Record 1: Rejected - Error on table SCHEDULE, column SCHEDID.
-ORA-01858: a non-numeric character was found where a numeric was expected
-
-Record 2: Rejected - Error on table SCHEDULE, column SCHEDID.
-ORA-01858: a non-numeric character was found where a numeric was expected
-
-Record 3: Rejected - Error on table SCHEDULE, column SCHEDID.
-ORA-01858: a non-numeric character was found where a numeric was expected
-
-Record 4: Rejected - Error on table SCHEDULE, column SCHEDID.
-ORA-01858: a non-numeric character was found where a numeric was expected
-
-Record 5: Rejected - Error on table SCHEDULE, column SCHEDID.
-ORA-01858: a non-numeric character was found where a numeric was expected
-
 
 Table SCHEDULE:
-  0 Rows successfully loaded.
-  5 Rows not loaded due to data errors.
+  5 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
 
@@ -56,11 +41,11 @@ Read   buffer bytes: 1048576
 
 Total logical records skipped:          0
 Total logical records read:             5
-Total logical records rejected:         5
+Total logical records rejected:         0
 Total logical records discarded:        0
 
-Run began on Wed Apr 17 18:28:02 2019
-Run ended on Wed Apr 17 18:28:02 2019
+Run began on Fri Apr 19 17:44:37 2019
+Run ended on Fri Apr 19 17:44:37 2019
 
-Elapsed time was:     00:00:00.12
+Elapsed time was:     00:00:00.13
 CPU time was:         00:00:00.03

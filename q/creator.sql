@@ -40,7 +40,7 @@ PRIMARY KEY (storeNum)
 create table employees
 (
 --name
-fname varchar(15) not null,
+fname varchar(18) not null,
 mname varchar(15),
 lname varchar(20) not null,
 --etc
@@ -70,8 +70,8 @@ create table schedule
 empId int not null,
 schedId date not null,
 sDay varchar(10),
-startTime varchar(4),
-endTime varchar(4),
+startTime varchar(10),
+endTime varchar(10),
 PRIMARY KEY (empId, schedId)
 );
 

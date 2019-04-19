@@ -1,0 +1,805 @@
+SQL> start queries1.sql
+
+no rows selected
+
+
+no rows selected
+
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+         0       1994 toyota          supra           orange    green           
+         2         51.1        159       21.6       21.6 m          6           
+        280        333 l6               3329        178        100              
+                                                                                
+         9       1992 chevrolet       camaro          black                     
+         2                               35.1       23.1 a          3           
+         91        132 l4               2877        179        100              
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+                                                                                
+        10       1982 delorean        dmc-12          silver                    
+         2          9.6        130         21         21 m          5           
+        132        153 v6               2844        168        100              
+                                                                                
+        16       1989 chevrolet       camaro          white                     
+         2                               35.1       23.1 a          3           
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+         91        132 l4               2877        179        100              
+                                                                                
+        17       2004 toyota          corolla         beige                     
+         4         14.5        112         49         49 a          5           
+         90        140 l4               2590        174        100              
+                                                                                
+
+
+FNAME              LNAME                                                        
+------------------ --------------------                                         
+Abdul              Howe                                                         
+Adela              Rice                                                         
+Adelbert           Kilback                                                      
+Aiden              Bruen                                                        
+Aimee              Ward                                                         
+Alexis             Wintheiser                                                   
+Alfonso            Senger                                                       
+Alia               Swaniawski                                                   
+Amely              Streich                                                      
+Angelina           Kirlin                                                       
+Anibal             Borer                                                        
+
+FNAME              LNAME                                                        
+------------------ --------------------                                         
+Antonina           Koss                                                         
+Antwan             Wilderman                                                    
+Arne               Cummerata                                                    
+Astrid             Emmerich                                                     
+August             O'Keefe                                                      
+Bennie             Stoltenberg                                                  
+Bernhard           Ziemann                                                      
+Bert               Runte                                                        
+Bo                 Gerhold                                                      
+Bonita             Von                                                          
+Brad               Wunsch                                                       
+
+FNAME              LNAME                                                        
+------------------ --------------------                                         
+Brianne            Osinski                                                      
+Brittany           Steuber                                                      
+Bulah              Kovacek                                                      
+Carlie             Cassin                                                       
+Carmella           Koelpin                                                      
+Carolyne           Crona                                                        
+Casimer            Yundt                                                        
+Celestino          Swift                                                        
+Chasity            O'Connell                                                    
+Chaz               Ernser                                                       
+Christop           Little                                                       
+
+FNAME              LNAME                                                        
+------------------ --------------------                                         
+Claudie            Leffler                                                      
+Claudie            Schinner                                                     
+Concepcion         Barrows                                                      
+Cora               Krajcik                                                      
+Cruz               Hodkiewicz                                                   
+Daisy              Luettgen                                                     
+Daniela            Corkery                                                      
+Deangelo           Gerlach                                                      
+Delpha             Shields                                                      
+Deven              Kunze                                                        
+Dorcas             Lindgren                                                     
+
+FNAME              LNAME                                                        
+------------------ --------------------                                         
+Dorthy             Skiles                                                       
+Doyle              Rohan                                                        
+Dylan              Rutherford                                                   
+Elbert             Wilderman                                                    
+Eleazar            Cruickshank                                                  
+Eliseo             Lindgren                                                     
+Elizabeth          Schneider                                                    
+Else               Schumm                                                       
+Emil               Yost                                                         
+Erika              Cronin                                                       
+Estefania          Osinski                                                      
+
+FNAME              LNAME                                                        
+------------------ --------------------                                         
+Ethan              Williamson                                                   
+Eulah              Ortiz                                                        
+Eulalia            Hodkiewicz                                                   
+Fatima             Labadie                                                      
+Fausto             Bins                                                         
+Francis            Beier                                                        
+Fred               Hoeger                                                       
+Frederick          Ritchie                                                      
+Gabe               Schulist                                                     
+Gardner            Fadel                                                        
+Garrett            Sawayn                                                       
+
+FNAME              LNAME                                                        
+------------------ --------------------                                         
+Georgianna         Ortiz                                                        
+Gerda              Bradtke                                                      
+Godfrey            Parisian                                                     
+Harley             Corkery                                                      
+Hassie             Pfeffer                                                      
+Hazel              Runte                                                        
+Hellen             Crist                                                        
+Immanuel           Muller                                                       
+Ismael             Welch                                                        
+Jackson            Hansen                                                       
+Jamaal             Prosacco                                                     
+
+FNAME              LNAME                                                        
+------------------ --------------------                                         
+Jaron              Bergnaum                                                     
+Jayce              Nader                                                        
+Jaylen             Zulauf                                                       
+Jerod              Jaskolski                                                    
+Johnson            Boyer                                                        
+Josefa             Denesik                                                      
+Kailyn             Kris                                                         
+Kavon              Emard                                                        
+Keith              Maggio                                                       
+Kenyatta           Bartell                                                      
+Kenyatta           Tremblay                                                     
+
+FNAME              LNAME                                                        
+------------------ --------------------                                         
+Keven              Herzog                                                       
+Kip                Schaefer                                                     
+Kody               Ortiz                                                        
+Leonardo           Grady                                                        
+Libbie             Connelly                                                     
+Loren              O'Keefe                                                      
+Mac                Wolff                                                        
+Mariah             Johns                                                        
+Maritza            Stark                                                        
+Maximillian        Boehm                                                        
+Megane             Harber                                                       
+
+FNAME              LNAME                                                        
+------------------ --------------------                                         
+Orrin              Murazik                                                      
+Price              Kub                                                          
+Rachael            Beahan                                                       
+Raquel             Nader                                                        
+Rebeka             Murphy                                                       
+Retha              Thiel                                                        
+Rex                Macejkovic                                                   
+Richmond           Purdy                                                        
+Rickey             Schuster                                                     
+Rosario            Pouros                                                       
+Rowan              Kohler                                                       
+
+FNAME              LNAME                                                        
+------------------ --------------------                                         
+Royce              Johns                                                        
+Ruby               Tillman                                                      
+Ruth               Hudson                                                       
+Shaina             Osinski                                                      
+Stephania          Marquardt                                                    
+Syble              Mitchell                                                     
+Tad                Heaney                                                       
+Tyreek             Abernathy                                                    
+Uriel              D'Amore                                                      
+Vernice            Torphy                                                       
+Veronica           Batz                                                         
+
+FNAME              LNAME                                                        
+------------------ --------------------                                         
+Vidal              Halvorson                                                    
+Virgie             Ferry                                                        
+Xavier             Bradtke                                                      
+???Adaline         Erdman                                                       
+
+125 rows selected.
+
+
+REPRESENTATIVE                                                                  
+--------------                                                                  
+             1                                                                  
+             2                                                                  
+             3                                                                  
+             4                                                                  
+             5                                                                  
+             6                                                                  
+             7                                                                  
+             8                                                                  
+             9                                                                  
+            10                                                                  
+            11                                                                  
+
+REPRESENTATIVE                                                                  
+--------------                                                                  
+            12                                                                  
+            13                                                                  
+            14                                                                  
+            15                                                                  
+            16                                                                  
+            17                                                                  
+            18                                                                  
+            19                                                                  
+            20                                                                  
+            21                                                                  
+            22                                                                  
+
+REPRESENTATIVE                                                                  
+--------------                                                                  
+            23                                                                  
+            24                                                                  
+            25                                                                  
+
+25 rows selected.
+
+
+no rows selected
+
+
+no rows selected
+
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+         0       1994 toyota          supra           orange    green           
+         2         51.1        159       21.6       21.6 m          6           
+        280        333 l6               3329        178        100              
+                                                                                
+         1       2014  toyota         camry           silver    black           
+         4                                 25         35 a          6           
+        180        170 l4               3241        191        100              
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+                                                                                
+         2       2015 toyota          camry           beige     black           
+         4                                 25         35 a          6           
+        180        170 l4               3241        191        100              
+                                                                                
+         3       2019 alfa romeo      mito            red                       
+         2         11.4        114       61.9         47 m          6           
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+        105        107 l2               2491        160        100              
+                                                                                
+         4       2019 porsche         911             silver                    
+         2          3.2        194       26.1       17.8 a          7           
+        520        347 h6               3318        179        100              
+                                                                                
+         5       2017 audi            r8              green     black           
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+         2          3.3        204       18.8       18.8 a          7           
+        610        413 v10              3737        174        100              
+                                                                                
+         6       2018 bmw             g20             white                     
+         4          8.5                  57.4       41.3 a          8           
+        150        236 l4                           185        100              
+                                                                                
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+         7       2008 chevrolet       express         white                     
+         2                                 18         14 a          4           
+        195        260 v6               4845        224        100              
+                                                                                
+         8       2013 chevrolet       sonic           red                       
+         4           11                    40         29 m          6           
+        140        148 4                2743        159        100              
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+                                                                                
+         9       1992 chevrolet       camaro          black                     
+         2                               35.1       23.1 a          3           
+         91        132 l4               2877        179        100              
+                                                                                
+        10       1982 delorean        dmc-12          silver                    
+         2          9.6        130         21         21 m          5           
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+        132        153 v6               2844        168        100              
+                                                                                
+        11       2012 dodge           viper           red                       
+         2          3.5        202         21         12 m          6           
+        649        600 v10              3354        176        100              
+                                                                                
+        12       2009 dodge           ram             blue                      
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+         4                                 20         14 a          4           
+        215        235 v6               6025        229        100              
+                                                                                
+        13       2012 dodge           dart            red                       
+         4                                 37         27 a          6           
+        162        184 4                3242        184        100              
+                                                                                
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+        14       2014 lexus           nx              grey                      
+         4            7        124         28         21 a          6           
+        238        258 l4               4050        182        100              
+                                                                                
+        15       2016 toyota          Prius           white                     
+         4         10.6        112       71.3       71.3 a                      
+         98        105 l4               3197        179        100              
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+                                                                                
+        16       1989 chevrolet       camaro          white                     
+         2                               35.1       23.1 a          3           
+         91        132 l4               2877        179        100              
+                                                                                
+        17       2004 toyota          corolla         beige                     
+         4         14.5        112         49         49 a          5           
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+         90        140 l4               2590        174        100              
+                                                                                
+        18       2008 toyota          corolla         black                     
+         4         14.5        112         49         49 a          5           
+         90        140 l4               2590        174        100              
+                                                                                
+        19       2005 toyota          corolla         silver                    
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+         4         14.5        112         49         49 a          5           
+         90        140 l4               2590        174        100              
+                                                                                
+
+20 rows selected.
+
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+         3       2019 alfa romeo      mito            red                       
+         2         11.4        114       61.9         47 m          6           
+        105        107 l2               2491        160        100              
+                                                                                
+         6       2018 bmw             g20             white                     
+         4          8.5                  57.4       41.3 a          8           
+        150        236 l4                           185        100              
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+                                                                                
+         7       2008 chevrolet       express         white                     
+         2                                 18         14 a          4           
+        195        260 v6               4845        224        100              
+                                                                                
+         8       2013 chevrolet       sonic           red                       
+         4           11                    40         29 m          6           
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+        140        148 4                2743        159        100              
+                                                                                
+        11       2012 dodge           viper           red                       
+         2          3.5        202         21         12 m          6           
+        649        600 v10              3354        176        100              
+                                                                                
+        12       2009 dodge           ram             blue                      
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+         4                                 20         14 a          4           
+        215        235 v6               6025        229        100              
+                                                                                
+        13       2012 dodge           dart            red                       
+         4                                 37         27 a          6           
+        162        184 4                3242        184        100              
+                                                                                
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+        15       2016 toyota          Prius           white                     
+         4         10.6        112       71.3       71.3 a                      
+         98        105 l4               3197        179        100              
+                                                                                
+        16       1989 chevrolet       camaro          white                     
+         2                               35.1       23.1 a          3           
+         91        132 l4               2877        179        100              
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+                                                                                
+
+9 rows selected.
+
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+         0       1994 toyota          supra           orange    green           
+         2         51.1        159       21.6       21.6 m          6           
+        280        333 l6               3329        178        100              
+                                                                                
+         1       2014  toyota         camry           silver    black           
+         4                                 25         35 a          6           
+        180        170 l4               3241        191        100              
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+                                                                                
+         2       2015 toyota          camry           beige     black           
+         4                                 25         35 a          6           
+        180        170 l4               3241        191        100              
+                                                                                
+         3       2019 alfa romeo      mito            red                       
+         2         11.4        114       61.9         47 m          6           
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+        105        107 l2               2491        160        100              
+                                                                                
+         4       2019 porsche         911             silver                    
+         2          3.2        194       26.1       17.8 a          7           
+        520        347 h6               3318        179        100              
+                                                                                
+         5       2017 audi            r8              green     black           
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+         2          3.3        204       18.8       18.8 a          7           
+        610        413 v10              3737        174        100              
+                                                                                
+         6       2018 bmw             g20             white                     
+         4          8.5                  57.4       41.3 a          8           
+        150        236 l4                           185        100              
+                                                                                
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+        10       1982 delorean        dmc-12          silver                    
+         2          9.6        130         21         21 m          5           
+        132        153 v6               2844        168        100              
+                                                                                
+        14       2014 lexus           nx              grey                      
+         4            7        124         28         21 a          6           
+        238        258 l4               4050        182        100              
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+                                                                                
+        15       2016 toyota          Prius           white                     
+         4         10.6        112       71.3       71.3 a                      
+         98        105 l4               3197        179        100              
+                                                                                
+        17       2004 toyota          corolla         beige                     
+         4         14.5        112         49         49 a          5           
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+         90        140 l4               2590        174        100              
+                                                                                
+        18       2008 toyota          corolla         black                     
+         4         14.5        112         49         49 a          5           
+         90        140 l4               2590        174        100              
+                                                                                
+        19       2005 toyota          corolla         silver                    
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+         4         14.5        112         49         49 a          5           
+         90        140 l4               2590        174        100              
+                                                                                
+
+13 rows selected.
+
+having (select sYear from cars) > 2000
+        *
+ERROR at line 4:
+ORA-01427: single-row subquery returns more than one row 
+
+
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+        10       1982 delorean        dmc-12          silver                    
+         2          9.6        130         21         21 m          5           
+        132        153 v6               2844        168        100              
+                                                                                
+        16       1989 chevrolet       camaro          white                     
+         2                               35.1       23.1 a          3           
+         91        132 l4               2877        179        100              
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+                                                                                
+         9       1992 chevrolet       camaro          black                     
+         2                               35.1       23.1 a          3           
+         91        132 l4               2877        179        100              
+                                                                                
+         0       1994 toyota          supra           orange    green           
+         2         51.1        159       21.6       21.6 m          6           
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+        280        333 l6               3329        178        100              
+                                                                                
+        17       2004 toyota          corolla         beige                     
+         4         14.5        112         49         49 a          5           
+         90        140 l4               2590        174        100              
+                                                                                
+        19       2005 toyota          corolla         silver                    
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+         4         14.5        112         49         49 a          5           
+         90        140 l4               2590        174        100              
+                                                                                
+        18       2008 toyota          corolla         black                     
+         4         14.5        112         49         49 a          5           
+         90        140 l4               2590        174        100              
+                                                                                
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+         7       2008 chevrolet       express         white                     
+         2                                 18         14 a          4           
+        195        260 v6               4845        224        100              
+                                                                                
+        12       2009 dodge           ram             blue                      
+         4                                 20         14 a          4           
+        215        235 v6               6025        229        100              
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+                                                                                
+        13       2012 dodge           dart            red                       
+         4                                 37         27 a          6           
+        162        184 4                3242        184        100              
+                                                                                
+        11       2012 dodge           viper           red                       
+         2          3.5        202         21         12 m          6           
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+        649        600 v10              3354        176        100              
+                                                                                
+         8       2013 chevrolet       sonic           red                       
+         4           11                    40         29 m          6           
+        140        148 4                2743        159        100              
+                                                                                
+         1       2014  toyota         camry           silver    black           
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+         4                                 25         35 a          6           
+        180        170 l4               3241        191        100              
+                                                                                
+        14       2014 lexus           nx              grey                      
+         4            7        124         28         21 a          6           
+        238        258 l4               4050        182        100              
+                                                                                
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+         2       2015 toyota          camry           beige     black           
+         4                                 25         35 a          6           
+        180        170 l4               3241        191        100              
+                                                                                
+        15       2016 toyota          Prius           white                     
+         4         10.6        112       71.3       71.3 a                      
+         98        105 l4               3197        179        100              
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+                                                                                
+         5       2017 audi            r8              green     black           
+         2          3.3        204       18.8       18.8 a          7           
+        610        413 v10              3737        174        100              
+                                                                                
+         6       2018 bmw             g20             white                     
+         4          8.5                  57.4       41.3 a          8           
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+        150        236 l4                           185        100              
+                                                                                
+         3       2019 alfa romeo      mito            red                       
+         2         11.4        114       61.9         47 m          6           
+        105        107 l2               2491        160        100              
+                                                                                
+         4       2019 porsche         911             silver                    
+
+       VIN      SYEAR MAKE            MODEL           PRIMCOLOR SECONDCOL       
+---------- ---------- --------------- --------------- --------- ---------       
+     DOORS ACCELERATION   TOPSPEED      MPGHI    MPGCITY T   NUMGEARS           
+---------- ------------ ---------- ---------- ---------- - ----------           
+POWEROUTPUT     TORQUE CYLINDERS      WEIGHT    SLENGTH   STORENUM              
+----------- ---------- ---------- ---------- ---------- ----------              
+         2          3.2        194       26.1       17.8 a          7           
+        520        347 h6               3318        179        100              
+                                                                                
+
+20 rows selected.
+
+SQL> start queries2.sql
+
+1 row created.
+
+
+1 row deleted.
+
+
+0 rows deleted.
+
+
+1 row updated.
+
+
+0 rows updated.
+
+SQL> exit

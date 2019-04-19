@@ -3077,4 +3077,74 @@ Record 23: Rejected - Error on table MANAGES, column MANAGERID.
 ORA-01722: invalid number
 
 Record 24: Rejected - Error on table MANAGES, column MANAGERID.
-ORA-01
+ORA-01722: invalid number
+
+Record 25: Rejected - Error on table MANAGES, column MANAGERID.
+ORA-01722: invalid number
+
+
+Table MANAGES:
+  0 Rows successfully loaded.
+  25 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  33024 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            25
+Total logical records rejected:        25
+Total logical records discarded:        0
+
+Run began on Wed Apr 17 18:32:27 2019
+Run ended on Wed Apr 17 18:32:27 2019
+
+Elapsed time was:     00:00:00.14
+CPU time was:         00:00:00.04
+]0;zdy262@databaselab: ~/tocopy/dzdy262@databaselab:~/tocopy/d$ cd ..
+]0;zdy262@databaselab: ~/tocopyzdy262@databaselab:~/tocopy$ git add .
+]0;zdy262@databaselab: ~/tocopyzdy262@databaselab:~/tocopy$ git commit -m """[KS"e"c"o"n"d"[C
+[master 0c2d275] Second
+ 25 files changed, 3779 insertions(+), 31 deletions(-)
+ create mode 100644 d/cars.bad
+ rename {data => d}/cars.csv (89%)
+ create mode 100644 d/customers.bad
+ rename {data => d}/customers.csv (100%)
+ rename data/employees.csv => d/employees.bad (100%)
+ create mode 100644 d/employees.csv
+ create mode 100644 d/loader.log
+ create mode 100644 d/loader1.log
+ create mode 100644 d/loader2.log
+ create mode 100644 d/loader3.log
+ create mode 100644 d/loader4.log
+ create mode 100644 d/loader5.log
+ create mode 100644 d/loader6.log
+ create mode 100644 d/loader7.log
+ create mode 100644 d/log1
+ create mode 100644 d/manages.bad
+ create mode 100644 d/manages.csv
+ create mode 100644 d/schedule.bad
+ rename {data => d}/schedule.csv (100%)
+ rename {data => d}/store.csv (100%)
+ delete mode 100644 data/manages.csv
+ create mode 100644 q/loader1.log
+ create mode 100644 q/loader5.log
+ create mode 100644 q/loader7.log
+]0;zdy262@databaselab: ~/tocopyzdy262@databaselab:~/tocopy$ git push origin master
+Username for 'https://github.com': Swordsman  Scientist
+Password for 'https://SwordsmanScientist@github.com': 
+warning: redirecting to https://github.com/SwordsmanScientist/db0.git/
+Counting objects: 21, done.
+Delta compression using up to 80 threads.
+Compressing objects:   4% (1/21)   Compressing objects:   9% (2/21)   Compressing objects:  14% (3/21)   Compressing objects:  19% (4/21)   Compressing objects:  23% (5/21)   Compressing objects:  28% (6/21)   Compressing objects:  33% (7/21)   Compressing objects:  38% (8/21)   Compressing objects:  42% (9/21)   Compressing objects:  47% (10/21)   Compressing objects:  52% (11/21)   Compressing objects:  57% (12/21)   Compressing objects:  61% (13/21)   Compressing objects:  66% (14/21)   Compressing objects:  71% (15/21)   Compressing objects:  76% (16/21)   Compressing objects:  80% (17/21)   Compressing objects:  85% (18/21)   Compressing objects:  90% (19/21)   Compressing objects:  95% (20/21)   Compressing objects: 100% (21/21)   Compressing objects: 100% (21/21), done.
+Writing objects:   4% (1/21)   Writing objects:   9% (2/21)   Writing objects:  14% (3/21)   Writing objects:  19% (4/21)   Writing objects:  23% (5/21)   Writing objects:  28% (6/21)   Writing objects:  42% (9/21)   Writing objects:  52% (11/21)   Writing objects:  57% (12/21)   Writing objects:  61% (13/21)   Writing objects:  66% (14/21)   Writing objects:  71% (15/21)   Writing objects:  76% (16/21)   Writing objects:  80% (17/21)   Writing objects:  85% (18/21)   Writing objects:  90% (19/21)   Writing objects:  95% (20/21)   Writing objects: 100% (21/21)   Writing objects: 100% (21/21), 25.77 KiB | 2.58 MiB/s, done.
+Total 21 (delta 11), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/11)   [Kremote: Resolving deltas:  36% (4/11)   [Kremote: Resolving deltas:  81% (9/11)   [Kremote: Resolving deltas:  90% (10/11)   [Kremote: Resolving deltas: 100% (11/11)   [Kremote: Resolving deltas: 100% (11/11), completed with 2 local objects.[K
+To https://www.github.com/SwordsmanScientist/db0
+   0996ed4..0c2d275  master -> master
+]0;zdy262@databaselab: ~/tocopyzdy262@databaselab:~/tocopy$ exit
+exit
+
+Script done on 2019-04-17 18:37:04+0000

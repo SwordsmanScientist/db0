@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 18:24:16 2019
+SQL*Loader: Release 12.2.0.1.0 - Production on Fri Apr 19 17:44:17 2019
 
 Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
 
@@ -43,70 +43,10 @@ SLENGTH                              NEXT     *   ,       CHARACTER
 STORENUM                             NEXT     *   ,       CHARACTER            
 
 value used for ROWS parameter changed from 64 to 52
-Record 1: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
-Record 2: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
-Record 3: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
-Record 4: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
-Record 5: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
-Record 6: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
-Record 7: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
-Record 8: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
-Record 9: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
-Record 10: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
-Record 11: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
-Record 12: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
-Record 13: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
-Record 14: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
-Record 15: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
-Record 16: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
-Record 17: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
-Record 18: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
-Record 19: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
-Record 20: Rejected - Error on table CARS, column STORENUM.
-ORA-01722: invalid number
-
 
 Table CARS:
-  0 Rows successfully loaded.
-  20 Rows not loaded due to data errors.
+  20 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
 
@@ -116,11 +56,11 @@ Read   buffer bytes: 1048576
 
 Total logical records skipped:          0
 Total logical records read:            20
-Total logical records rejected:        20
+Total logical records rejected:         0
 Total logical records discarded:        0
 
-Run began on Wed Apr 17 18:24:16 2019
-Run ended on Wed Apr 17 18:24:16 2019
+Run began on Fri Apr 19 17:44:17 2019
+Run ended on Fri Apr 19 17:44:18 2019
 
-Elapsed time was:     00:00:00.14
+Elapsed time was:     00:00:00.16
 CPU time was:         00:00:00.03
