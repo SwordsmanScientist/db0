@@ -1,8 +1,0 @@
-
-SQL*Loader: Release 12.2.0.1.0 - Production on Wed Apr 17 04:26:56 2019
-
-Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
-
-SQL*Loader-128: unable to begin a session
-ORA-01017: invalid username/password; logon denied
-
